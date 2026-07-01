@@ -2,6 +2,7 @@
 layout: home
 title: Contrails Australia
 permalink: /contrails-australia/
+noindex: true
 ---
 
 <div class="hero-banner" style="background-image: url('/assets/images/gabriela-natiello-_ciDodax1Ks-unsplash.jpg');"></div>

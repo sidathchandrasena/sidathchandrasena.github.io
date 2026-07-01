@@ -69,7 +69,7 @@ Then retry. To make this permanent, add that line to `~/.zshrc`.
 ## Site structure
 
 ```
-sidathc.github.io/
+sidathchandrasena.github.io/
 ├── _config.yml           # Site-wide settings (title, plugins, nav)
 ├── _layouts/
 │   ├── home.html         # Layout for post-listing pages (e.g. Contrails Australia)

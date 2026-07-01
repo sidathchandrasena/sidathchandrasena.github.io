@@ -2,6 +2,7 @@
 layout: page
 title: About This Project
 permalink: /about/
+noindex: true
 ---
 <script>document.body.classList.add('contrails-theme');</script>
 
