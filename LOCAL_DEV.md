@@ -4,12 +4,38 @@ This site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pag
 
 ---
 
+## Quick start (TL;DR)
+
+If your environment is already set up (see below), previewing is two steps:
+
+```bash
+cd ~/sidathc.github.io
+bundle exec jekyll serve --livereload
+```
+
+Then open **http://localhost:4000** in your browser. Edit any `.md` file and **save** — the page refreshes automatically within a second. Press `Ctrl+C` to stop the server.
+
+**The live-preview loop:**
+
+1. Start the server (command above).
+2. Open http://localhost:4000 (or go straight to the post you're editing).
+3. Edit a `.md` file → save → the browser auto-refreshes.
+4. When happy, `git add` / `commit` / `push`. **Nothing is published until you push** — the local server is entirely private to your machine.
+
+> Note: the Sass deprecation warnings printed on startup (about `lighten()` / `darken()`) are harmless — they come from the old Minima theme, not your content. Ignore them.
+
+---
+
 ## Prerequisites
 
 - **Homebrew** — macOS package manager ([brew.sh](https://brew.sh))
 - **Ruby** (Homebrew version, not the macOS system one)
 
 ### Install Homebrew Ruby (one-time)
+
+> **Status on this machine:** already done. Homebrew Ruby 4.0.x is installed and the
+> PATH line below is present in `~/.zshrc`. You only need this section when setting up
+> a new machine.
 
 ```bash
 brew install ruby
@@ -27,6 +53,9 @@ Verify you have the right one:
 ```bash
 ruby --version   # should show 3.x or 4.x, not 2.6.x
 ```
+
+**Important:** the PATH change only applies to terminals opened *after* it was added.
+If you already have a terminal open, run `source ~/.zshrc` or open a new tab.
 
 ### Install Jekyll (one-time, per repo)
 
@@ -54,15 +83,31 @@ Then open **http://localhost:4000** in your browser.
 
 To stop the server: `Ctrl+C`
 
-### If you get "command not found: bundle"
+### Troubleshooting
 
-Your shell PATH may not include the Homebrew Ruby bin. Run:
+Almost every local-dev problem is the same root cause: **the terminal is using the macOS
+system Ruby (2.6.x) instead of Homebrew Ruby (4.0.x).** Check with `ruby --version` — if it
+says `2.6.x`, the PATH isn't set for this terminal.
+
+**Symptom: `command not found: bundle`**
+Your PATH doesn't include the Homebrew Ruby bin. Run:
 
 ```bash
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 ```
 
-Then retry. To make this permanent, add that line to `~/.zshrc`.
+Then retry. To make it permanent, ensure that line is in `~/.zshrc` (it should already be).
+
+**Symptom: `Could not find 'bundler' (4.0.8) required by your Gemfile.lock`**
+Same root cause — you're on system Ruby, which only ships an old bundler. Fix the PATH as
+above (`ruby --version` should then show 4.0.x) and re-run the serve command. Do **not**
+"fix" this by installing an old bundler into system Ruby.
+
+**Quick one-liner to force the right Ruby for a single command** (without changing your shell):
+
+```bash
+PATH="/opt/homebrew/opt/ruby/bin:$PATH" bundle exec jekyll serve --livereload
+```
 
 ---
 
