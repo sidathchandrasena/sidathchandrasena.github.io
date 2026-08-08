@@ -387,7 +387,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
       <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/allis-appoo-news.jpg" alt="Allis Appoo newspaper clipping" loading="lazy">
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Allis Appoo</span>
-        <span class="sm-profile-tile-years">? – 1914</span>
+        <span class="sm-profile-tile-years">Unknown – 1914</span>
       </div>
     </div>
 
@@ -429,7 +429,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
       <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/peter-appoo-news.jpg" alt="Peter Appoo newspaper" loading="lazy">
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Peter Appoo</span>
-        <span class="sm-profile-tile-years">? – 1916</span>
+        <span class="sm-profile-tile-years">Unknown – 1916</span>
       </div>
     </div>
 
@@ -476,16 +476,17 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     </div>
 
     <!-- 14 -->
-    <div class="sm-profile-tile sm-tile-doc fade-in" tabindex="0" role="button"
-      data-name="Matho Appo"
-      data-sin="මැතෝ අප්පු (possible)"
-      data-dates="Born: 1856, Ceylon · Died: 1942, Dunwich, Queensland"
-      data-img="/assets/images/sri-lankan-migration/profiles/matho-appo-form.jpeg"
-      data-bio="&lt;p&gt;Matho Appo was born in 1856 in Ceylon and came to Mackay onboard the SS Devonshire in 1882. A Matho Appo is listed in a local newspaper as being charged with arson for setting fire to a humpy in 1904.&lt;/p&gt;&lt;p&gt;Appoo worked in Mackay for many years, and was admitted to Dunwich Asylum in 1942, where he died of cerebral thrombosis at 86 years.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Dunwich Benevolent Asylum admission form. © State of Queensland (Queensland State Archives), licensed under CC BY 3.0 AU. Scanned and shared with permission by John Winterbotham via Find A Grave.&lt;/em&gt;&lt;/p&gt;">
-      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/matho-appo-form.jpeg" alt="Matho Appo form" loading="lazy">
+    <div class="sm-profile-tile fade-in" tabindex="0" role="button"
+      data-name="Baron Pereira"
+      data-dates="Born: Unknown, Ceylon · Died: 1883, Homebush, Queensland"
+      data-bio="&lt;p&gt;Baron Pereira was one of the Devonshire passengers that was likely part of the group that disembarked in Mackay. His occupation was described as &quot;overseer&quot; at Homebush Sugar Plantation. He died in January 1883, just under eleven weeks after the voyage to Queensland, when Sing Appoo stabbed him in the shoulder and side after a dispute on working hours. Pereira died a week later on the 30th of haemorrhage leading to suffocation.&lt;sup&gt;&lt;a href=&quot;#bp-ref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;bp-ref1&quot;&gt;[1]&lt;/a&gt; &lt;a href=&quot;https://trove.nla.gov.au/newspaper/article/287308585&quot;&gt;Trove&lt;/a&gt;&lt;/p&gt;">
+      <div class="sm-profile-tile-initials">
+        <span class="sm-profile-tile-initials-letters">BP</span>
+        <span class="sm-profile-tile-initials-name">Baron Pereira</span>
+      </div>
       <div class="sm-profile-tile-label">
-        <span class="sm-profile-tile-name">Matho Appo</span>
-        <span class="sm-profile-tile-years">1856 – 1942</span>
+        <span class="sm-profile-tile-name">Baron Pereira</span>
+        <span class="sm-profile-tile-years">Unknown – 1883</span>
       </div>
     </div>
 
@@ -559,28 +560,32 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     </div>
 
     <!-- 20 -->
-    <div class="sm-profile-tile sm-tile-doc fade-in" tabindex="0" role="button"
-      data-name="Mukhan Hassan"
-      data-dates="Born: 1856, Ceylon · Died: 1948, Sandgate, Queensland"
-      data-img="/assets/images/sri-lankan-migration/profiles/mukhan-hassan-form.jpeg"
-      data-bio="&lt;p&gt;Mukhan Hassan was born in 1856 in Ceylon and is one of the few non-Sinhalese among the 500 who came onboard the Devonshire in 1882. He worked as a labourer until he was admitted to Dunwich Benevolent Asylum in 1941, being unable to care for himself. He died in Sandgate in 1948 aged 92 years from concussion, bruises and senility.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Dunwich Benevolent Asylum admission form. © State of Queensland (Queensland State Archives), licensed under CC BY 3.0 AU. Scanned and shared with permission by John Winterbotham via Find A Grave.&lt;/em&gt;&lt;/p&gt;">
-      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/mukhan-hassan-form.jpeg" alt="Mukhan Hassan form" loading="lazy">
+    <div class="sm-profile-tile fade-in" tabindex="0" role="button"
+      data-name="Sardis Appo"
+      data-dates="Born: c. 1862, Ceylon · Died: 1937, Queensland"
+      data-bio="&lt;p&gt;Sardis Appo was likely to be a part of the group that disembarked in Bundaberg, as in 1914 he is recorded as a cane labourer that resided in Booyal and Gin Gin previously.&lt;sup&gt;&lt;a href=&quot;#sa-ref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; In 1928, at Booyal, he was the target of a poisoning attempt, when someone put strychnine in his curry. The dose was so strong that he refused to eat beyond a mouthful, which saved his life.&lt;sup&gt;&lt;a href=&quot;#sa-ref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; He died in 1937 at around the age of 75.&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;sa-ref1&quot;&gt;[1]&lt;/a&gt; &lt;a href=&quot;https://www.archivessearch.qld.gov.au/items/ITM2673826&quot;&gt;Queensland State Archives&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;sa-ref2&quot;&gt;[2]&lt;/a&gt; &lt;a href=&quot;https://trove.nla.gov.au/newspaper/article/234664407&quot;&gt;Trove&lt;/a&gt;&lt;/p&gt;">
+      <div class="sm-profile-tile-initials">
+        <span class="sm-profile-tile-initials-letters">SA</span>
+        <span class="sm-profile-tile-initials-name">Sardis Appo</span>
+      </div>
       <div class="sm-profile-tile-label">
-        <span class="sm-profile-tile-name">Mukhan Hassan</span>
-        <span class="sm-profile-tile-years">1856 – 1948</span>
+        <span class="sm-profile-tile-name">Sardis Appo</span>
+        <span class="sm-profile-tile-years">c.1862 – 1937</span>
       </div>
     </div>
 
     <!-- 21 -->
     <div class="sm-profile-tile fade-in" tabindex="0" role="button"
-      data-name="Charles Deen"
-      data-dates="Born: 1865, Ceylon · Died: 1913, Brisbane, Queensland"
-      data-img="/assets/images/sri-lankan-migration/profiles/charles-deen.jpeg"
-      data-bio="&lt;p&gt;Charles Deen was born in 1865 in Ceylon and came onboard the SS Devonshire in 1882. It is possible he was one of the few non-Sinhalese onboard, although in a local article his nationality is disputed by fellow Ceylonese migrant Kallu (Call) Appoo.&lt;/p&gt;&lt;p&gt;Deen was hanged for the murder of Peter Dina in 1913 at Boggo Road Gaol, Brisbane.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Charles Deen, prison photograph, 1913. © State of Queensland (Queensland State Archives), licensed under CC BY 3.0 AU.&lt;/em&gt;&lt;/p&gt;">
-      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/charles-deen.jpeg" alt="Charles Deen" loading="lazy">
+      data-name="James Davis"
+      data-dates="Born: 1865, Ceylon · Died: 1945, Gin Gin, Queensland"
+      data-bio="&lt;p&gt;James Davis came on board the Devonshire, listing his arrival date in Queensland as 13 October 1882 and it is believed he disembarked in Mackay.&lt;sup&gt;&lt;a href=&quot;#jd-ref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; James married Emily Ida Shoesmith in 1889 at the residence of Brumphy Singho, who was another Cingalese that lived near Gin Gin.&lt;sup&gt;&lt;a href=&quot;#jd-ref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; He submitted an application for an exemption under the Sugar Cultivation Act in 1913, where he lists his occupation as a farmer and residence as Goodnight Scrub, previously Mackay, Bundaberg and Tirroan.&lt;sup&gt;&lt;a href=&quot;#jd-ref2&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt; He died in 1945 and is buried in the Gin Gin Cemetery in Queensland.&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;jd-ref1&quot;&gt;[1]&lt;/a&gt; &lt;a href=&quot;https://www.wikitree.com/wiki/Davis-5512#_note-20&quot;&gt;WikiTree&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;jd-ref2&quot;&gt;[2]&lt;/a&gt; &lt;a href=&quot;https://www.archivessearch.qld.gov.au/items/ITM2673609&quot;&gt;Queensland State Archives&lt;/a&gt;&lt;/p&gt;">
+      <div class="sm-profile-tile-initials">
+        <span class="sm-profile-tile-initials-letters">JD</span>
+        <span class="sm-profile-tile-initials-name">James Davis</span>
+      </div>
       <div class="sm-profile-tile-label">
-        <span class="sm-profile-tile-name">Charles Deen</span>
-        <span class="sm-profile-tile-years">1865 – 1913</span>
+        <span class="sm-profile-tile-name">James Davis</span>
+        <span class="sm-profile-tile-years">1865 – 1945</span>
       </div>
     </div>
 
@@ -594,21 +599,22 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
       <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/sing-appu-news.jpg" alt="Sing Appu newspaper" loading="lazy">
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Sing Appu</span>
-        <span class="sm-profile-tile-years">? – 1940</span>
+        <span class="sm-profile-tile-years">Unknown – 1940</span>
       </div>
     </div>
 
     <!-- 23 -->
     <div class="sm-profile-tile fade-in" tabindex="0" role="button"
-      data-name="Abraham Weerarathna Jayasuria"
-      data-sin="අබරාන් වීරරත්න ජයසූරිය"
-      data-dates="Born: 1872, Ceylon · Died: 1964, Ingham, Queensland"
-      data-img="/assets/images/sri-lankan-migration/profiles/abraham-news.jpg"
-      data-bio="&lt;p&gt;Abraham Weerarathna Jayasuria was born in 1872 in Ceylon. It is likely he came onboard the SS Devonshire in 1882 given the limited means of travel at the time. He was engaged in sugar growing and resided for 45 years in the Ingham district. He also experimented with growing tea in Queensland. He died in 1964 in Ingham.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Morning Bulletin (Rockhampton, Qld. : 1878–1954), 6 August 1938, p. 8. Retrieved from https://nla.gov.au/nla.news-article55985959.&lt;/em&gt;&lt;/p&gt;">
-      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/abraham-news.jpg" alt="Abraham Jayasuria newspaper" loading="lazy">
+      data-name="Shamrow"
+      data-dates="Born: Unknown, Bangalore, India · Died: Unknown"
+      data-bio="&lt;p&gt;Shamrow was one of the few passengers onboard the Devonshire that was not of Ceylonese origin. He is described as a native of Bangalore, India and around thirty years old. He is mostly known through newspaper reports in the days following the ship’s arrival, as he became the group’s spokesperson with the media. He alleged that the group was mistreated on the voyage, with limited food rations and water allowed per person on hot, tropical days and a woman dying of neglect. He is last heard from in January 1883 in newspaper articles, where he petitioned local MPs to pressure the government into sending the group back to Ceylon.&lt;/p&gt;">
+      <div class="sm-profile-tile-initials">
+        <span class="sm-profile-tile-initials-letters">Sh</span>
+        <span class="sm-profile-tile-initials-name">Shamrow</span>
+      </div>
       <div class="sm-profile-tile-label">
-        <span class="sm-profile-tile-name">Abraham Jayasuria</span>
-        <span class="sm-profile-tile-years">1872 – 1964</span>
+        <span class="sm-profile-tile-name">Shamrow</span>
+        <span class="sm-profile-tile-years">Unknown – Unknown</span>
       </div>
     </div>
 
@@ -665,7 +671,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
       </div>
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Charlie Williams</span>
-        <span class="sm-profile-tile-years">? – 1893</span>
+        <span class="sm-profile-tile-years">Unknown – 1893</span>
       </div>
     </div>
 
@@ -681,7 +687,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
       </div>
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Sing Apoo</span>
-        <span class="sm-profile-tile-years">? – 1908</span>
+        <span class="sm-profile-tile-years">Unknown – 1908</span>
       </div>
     </div>
 
@@ -700,14 +706,12 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     </div>
 
     <!-- 30 -->
-    <div class="sm-profile-tile fade-in" tabindex="0" role="button"
+    <div class="sm-profile-tile sm-tile-doc fade-in" tabindex="0" role="button"
       data-name="Johannes"
       data-dates="Born: 1867, Ceylon · Died: 1906, Brisbane, Queensland"
-      data-bio="&lt;p&gt;Johannes was born in Ceylon in 1867 and came onboard the SS Devonshire in 1882. He was charged with the murder of a constable and hanged at Boggo Road Gaol in Brisbane in 1906.&lt;/p&gt;">
-      <div class="sm-profile-tile-initials">
-        <span class="sm-profile-tile-initials-letters">Jo</span>
-        <span class="sm-profile-tile-initials-name">Johannes</span>
-      </div>
+      data-img="/assets/images/sri-lankan-migration/profiles/johannes-form.jpeg"
+      data-bio="&lt;p&gt;Johannes was born in Ceylon in 1867 and came onboard the SS Devonshire in 1882.&lt;sup&gt;&lt;a href=&quot;#jo-ref1&quot;&gt;[1]&lt;/a&gt;&lt;/sup&gt; He was charged with the murder of a constable and hanged at Boggo Road Gaol in Brisbane in 1906.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Johannes, prison photograph, 1906. © State of Queensland (Queensland State Archives), licensed under CC BY 3.0 AU.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;jo-ref1&quot;&gt;[1]&lt;/a&gt; &lt;a href=&quot;https://www.archivessearch.qld.gov.au/api/download_file/DR17272&quot;&gt;Queensland State Archives&lt;/a&gt;&lt;/p&gt;">
+      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/johannes-form.jpeg" alt="Johannes prison record" loading="lazy">
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Johannes</span>
         <span class="sm-profile-tile-years">1867 – 1906</span>
