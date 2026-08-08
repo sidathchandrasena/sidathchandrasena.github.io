@@ -735,6 +735,33 @@
   background: rgba(28,18,8,0.18);
 }
 
+.sm-modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+  transition: background 0.2s;
+}
+
+.sm-modal-nav:hover {
+  background: rgba(255,255,255,0.24);
+}
+
+.sm-modal-prev { left: 1.25rem; }
+.sm-modal-next { right: 1.25rem; }
+
 .sm-modal-inner {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -1014,6 +1041,15 @@
   .sm-modal-inner {
     grid-template-columns: 1fr;
   }
+
+  .sm-modal-nav {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.4rem;
+  }
+
+  .sm-modal-prev { left: 0.4rem; }
+  .sm-modal-next { right: 0.4rem; }
 
   .sm-modal-image-col {
     border-radius: 10px 10px 0 0;

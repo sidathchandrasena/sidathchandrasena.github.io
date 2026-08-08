@@ -14,6 +14,8 @@
   <!-- Profile modal -->
   <div id="sm-modal" class="sm-modal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="sm-modal-backdrop"></div>
+    <button class="sm-modal-nav sm-modal-prev" aria-label="Previous profile">&#8249;</button>
+    <button class="sm-modal-nav sm-modal-next" aria-label="Next profile">&#8250;</button>
     <div class="sm-modal-card">
       <button class="sm-modal-close" aria-label="Close">&times;</button>
       <div class="sm-modal-inner">
@@ -59,8 +61,14 @@
       var modalSin   = modal.querySelector('.sm-modal-sinhalese');
       var modalDates = modal.querySelector('.sm-modal-dates');
       var modalBio   = modal.querySelector('.sm-modal-bio');
+      var modalPrev  = modal.querySelector('.sm-modal-prev');
+      var modalNext  = modal.querySelector('.sm-modal-next');
+
+      var allTiles = Array.prototype.slice.call(document.querySelectorAll('.sm-profile-tile'));
+      var currentIndex = -1;
 
       function openModal(card) {
+        currentIndex = allTiles.indexOf(card);
         var img    = card.dataset.img   || '';
         var name   = card.dataset.name  || '';
         var sin    = card.dataset.sin   || '';
@@ -95,6 +103,12 @@
         document.body.style.overflow = '';
       }
 
+      function navigate(delta) {
+        if (!allTiles.length) return;
+        currentIndex = (currentIndex + delta + allTiles.length) % allTiles.length;
+        openModal(allTiles[currentIndex]);
+      }
+
       document.querySelectorAll('.sm-profile-tile').forEach(function (tile) {
         tile.addEventListener('click', function () { openModal(tile); });
         tile.addEventListener('keydown', function (e) {
@@ -104,8 +118,13 @@
 
       modal.querySelector('.sm-modal-close').addEventListener('click', closeModal);
       modal.querySelector('.sm-modal-backdrop').addEventListener('click', closeModal);
+      modalPrev.addEventListener('click', function (e) { e.stopPropagation(); navigate(-1); });
+      modalNext.addEventListener('click', function (e) { e.stopPropagation(); navigate(1); });
       document.addEventListener('keydown', function (e) {
+        if (!modal.classList.contains('open')) return;
         if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'ArrowRight') navigate(1);
       });
     });
   </script>
