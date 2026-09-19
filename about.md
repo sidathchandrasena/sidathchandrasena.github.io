@@ -56,7 +56,7 @@ noindex: true
     <p>My name is <strong>Sidath Chandrasena</strong>. I am a recent graduate with a dual degree in Integrative Engineering and International Studies with a minor in Data Science from Lafayette College. I work as a software engineer and this project combines my background in data and my long-standing interest in aviation and the environment. The analysis is built on Python, PostgreSQL, and GeoPandas, using Google Contrails API and OpenSky Network.</p>
     <p>Growing up in Australia, I saw first-hand that reliance on air travel. <strong>Contrails Australia</strong> is my personal project to examine contrail formation in Australian skies using real atmospheric data — identifying hotspots, understanding the conditions that create them, and exploring what avoidance might look like in practice.</p>
     <ul>
-      <li><strong>GitHub:</strong> <a href="https://github.com/sidathc">sidathc</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/sidathchandrasena">sidathchandrasena</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sidath-chandrasena">sidath-chandrasena</a></li>
       <li><strong>Email:</strong> sidath.chandrasena[at]gmail.com</li>
     </ul>

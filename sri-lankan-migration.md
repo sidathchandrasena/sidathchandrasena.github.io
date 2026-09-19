@@ -54,8 +54,8 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     <h2 class="sm-section-heading">Indentured Labour: A Solution to Blackbirding</h2>
     <div class="sm-body">
       <p>Following the expansion of sugarcane farming in the late 1800s, planters in the sugar industry faced a dilemma. They believed that sugarcane plantation work was unsuitable for Europeans, but did not wish for non-Europeans to come and settle in Queensland.</p>
-      <p>As a solution to this, it is estimated that more than 60,000 South Sea Islanders were transported to Queensland and Northern New South Wales between 1863 and 1904 for work on sugarcane plantations, in a practice termed <strong>'blackbirding'</strong><sup><a href="#ref-irvine">1</a></sup>. These people were from more than 80 Pacific Islands, often brought using coercion, or force. It is estimated that one-third of workers brought were kidnapped or brought through trickery.</p>
-      <p>The poor and arduous conditions of sugarcane plantation work, and the lack of labour contracts to protect the rights of the workers, meant that these workers were effectively treated as slaves and many died on the plantation fields. In the 1870s and 80s, the mortality rate exceeded 6 percent, and in 1885, was just under 10 percent<sup><a href="#ref-rains">2</a></sup>.</p>
+      <p>As a solution to this, it is estimated that more than 60,000 South Sea Islanders were transported to Queensland and Northern New South Wales between 1863 and 1904 for work on sugarcane plantations, in a practice termed <strong>'blackbirding'</strong><sup><a href="#ref-irvine">4</a></sup>. These people were from more than 80 Pacific Islands, often brought using coercion, or force. It is estimated that one-third of workers brought were kidnapped or brought through trickery.</p>
+      <p>The poor and arduous conditions of sugarcane plantation work, and the lack of labour contracts to protect the rights of the workers, meant that these workers were effectively treated as slaves and many died on the plantation fields. In the 1870s and 80s, the mortality rate exceeded 6 percent, and in 1885, was just under 10 percent<sup><a href="#ref-rains">5</a></sup>.</p>
       <p>The high mortality rates and opposition from the Anti-Slavery Society in Britain soon made this practice unsustainable, and in the search for cheap, indentured labour, sugarcane planters looked to various parts of Asia, including Ceylon.</p>
     </div>
   </div>
@@ -68,7 +68,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
   <div class="sm-split-text fade-in">
     <h2 class="sm-section-heading">The Decision to Source Labour from Ceylon</h2>
     <div class="sm-body">
-      <p>Planters in Queensland initially sought to obtain Indian Tamil labourers that had been brought to many British colonies abroad including Ceylon and were described as being <em>'the most docile, most amenable labour force in the world'</em><sup><a href="#ref-docker">3</a></sup>. However, the British Indian government refused to permit the planters to bring these workers, citing the mistreatment of the South Sea Islanders in Queensland.</p>
+      <p>Planters in Queensland initially sought to obtain Indian Tamil labourers that had been brought to many British colonies abroad including Ceylon and were described as being <em>'the most docile, most amenable labour force in the world'</em><sup><a href="#ref-docker">2</a></sup>. However, the British Indian government refused to permit the planters to bring these workers, citing the mistreatment of the South Sea Islanders in Queensland.</p>
       <p>The planters then looked to Ceylon, where no legislation had been put in place due to lack of emigration and small population on the island. Although Indian Tamil labourers were unavailable, it was possible to hire the native population of Sinhalese people.</p>
       <p>Horace Burkitt of Bundaberg contacted his brother-in-law, Henry Caulfield, a resident in Ceylon to organise the recruitment of 500 workers.</p>
     </div>
@@ -85,7 +85,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-pullquote fade-in">
   <blockquote>
     <p>'Beyond attending to their village holdings and rice fields, they did not take up agricultural work, though they were first class timber fellers, good carpenters, sawyers and masons. Yet under different conditions and away from local influences they might make good agricultural labourers.'</p>
-    <cite>— Henry St George Caulfield, on the suitability of Sinhalese workers<sup><a href="#ref-caulfield">4</a></sup></cite>
+    <cite>— Henry St George Caulfield, on the suitability of Sinhalese workers<sup><a href="#ref-caulfield">1</a></sup></cite>
   </blockquote>
 </section>
 
@@ -101,7 +101,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     <h2 class="sm-section-heading">Reasons for Emigration</h2>
     <div class="sm-body">
       <p>No mass migration out of Ceylon had occurred in the past century, and scholars cite several factors motivating these migrants to emigrate.</p>
-      <p>Swan writes the fall of the coffee industry in the 1870s and 1880s changing the attitudes of many who may not have otherwise decided to embark abroad<sup><a href="#ref-swan">5</a></sup>. Caulfield cites adventurousness, writing that they were <em>'keen on seeing what the outside world was like'</em>.</p>
+      <p>Swan writes the fall of the coffee industry in the 1870s and 1880s changing the attitudes of many who may not have otherwise decided to embark abroad<sup><a href="#ref-swan">8</a></sup>. Caulfield cites adventurousness, writing that they were <em>'keen on seeing what the outside world was like'</em>.</p>
     </div>
   </div>
 </section>

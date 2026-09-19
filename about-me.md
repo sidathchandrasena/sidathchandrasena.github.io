@@ -24,7 +24,7 @@ permalink: /about-me/
 
   <h2>Get in touch</h2>
   <ul class="about-links">
-    <li><a href="https://github.com/sidathc" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://github.com/sidathchandrasena" target="_blank" rel="noopener">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/sidath-chandrasena" target="_blank" rel="noopener">LinkedIn</a></li>
     <li>sidath.chandrasena[at]gmail.com</li>
   </ul>

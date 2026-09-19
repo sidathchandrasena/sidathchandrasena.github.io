@@ -45,7 +45,7 @@ layout: default
     </div>
   </a>
 
-  <a class="project-card" href="https://github.com/sidathc/magazine-web-app" target="_blank" rel="noopener">
+  <a class="project-card" href="https://github.com/sidathchandrasena/magazine-web-app" target="_blank" rel="noopener">
     <div class="project-card-body">
       <h2 class="project-title">Airline Magazine Database</h2>
       <p class="project-desc">A web application to track the inventory of my airline magazine collection.</p>
