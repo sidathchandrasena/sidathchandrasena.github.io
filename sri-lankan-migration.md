@@ -26,7 +26,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
      ══════════════════════════════════════════════════════ -->
 <section class="sm-dark">
   <div class="sm-dark-inner fade-in">
-    <p class="sm-opening-quote">"The mass migration of Sri Lankans to Queensland in the late 19th century is an anomaly in a period of Australia's exclusively white post-colonial history."</p>
+    <p class="sm-opening-quote">The mass migration of Sri Lankans to Queensland in the late 19th century is an anomaly in a period when acceptance of non-European migrants was heavily scrutinised.</p>
     <p>Yet in 1882, the <em>SS Devonshire</em> left Galle, Ceylon (now Sri Lanka) with 500 Cingalese, bound for Mackay &amp; Bundaberg in North Queensland. Many of these migrants remained in Australia after federation in 1901, despite the hostile environment towards non-Europeans.</p>
     <p>Little information exists about this migration, apart from a few pieces of literature, newspaper articles and records.</p>
   </div>
@@ -48,14 +48,14 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-editorial fade-in">
   <div class="sm-editorial-img-wrap">
     <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/kanaka-cane-workers.jpeg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/kanaka-cane-workers.jpeg" alt="South Sea Islander farm workers on a sugar plantation at Cairns, 1890"></a>
-    <span class="sm-img-caption">South Sea Islander farm workers on a sugar plantation at Cairns, 1890 · State Library of Queensland (<em>Flickr: The Commons</em>, no known copyright restrictions)</span>
+    <span class="sm-img-caption">South Sea Islander farm workers on a sugar plantation at Cairns, 1890 · (<em>State Library of Queensland; The Commons</em>)</span>
   </div>
   <div class="sm-editorial-body">
     <h2 class="sm-section-heading">Indentured Labour: A Solution to Blackbirding</h2>
     <div class="sm-body">
       <p>Following the expansion of sugarcane farming in the late 1800s, planters in the sugar industry faced a dilemma. They believed that sugarcane plantation work was unsuitable for Europeans, but did not wish for non-Europeans to come and settle in Queensland.</p>
-      <p>As a solution to this, it is estimated that more than 60,000 South Sea Islanders were transported to Queensland and Northern New South Wales between 1863 and 1904 for work on sugarcane plantations, in a practice termed <strong>'blackbirding'</strong>. These people were from more than 80 Pacific Islands, often brought using coercion, or force. It is estimated that one-third of workers brought were kidnapped or brought through trickery.</p>
-      <p>The poor and arduous conditions of sugarcane plantation work, and the lack of labour contracts to protect the rights of the workers, meant that these workers were effectively treated as slaves and many died on the plantation fields. In the 1870s and 80s, the mortality rate exceeded 6 percent, and in 1885, was just under 10 percent.</p>
+      <p>As a solution to this, it is estimated that more than 60,000 South Sea Islanders were transported to Queensland and Northern New South Wales between 1863 and 1904 for work on sugarcane plantations, in a practice termed <strong>'blackbirding'</strong><sup><a href="#ref-irvine">1</a></sup>. These people were from more than 80 Pacific Islands, often brought using coercion, or force. It is estimated that one-third of workers brought were kidnapped or brought through trickery.</p>
+      <p>The poor and arduous conditions of sugarcane plantation work, and the lack of labour contracts to protect the rights of the workers, meant that these workers were effectively treated as slaves and many died on the plantation fields. In the 1870s and 80s, the mortality rate exceeded 6 percent, and in 1885, was just under 10 percent<sup><a href="#ref-rains">2</a></sup>.</p>
       <p>The high mortality rates and opposition from the Anti-Slavery Society in Britain soon made this practice unsustainable, and in the search for cheap, indentured labour, sugarcane planters looked to various parts of Asia, including Ceylon.</p>
     </div>
   </div>
@@ -68,7 +68,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
   <div class="sm-split-text fade-in">
     <h2 class="sm-section-heading">The Decision to Source Labour from Ceylon</h2>
     <div class="sm-body">
-      <p>Planters in Queensland initially sought to obtain Indian Tamil labourers that had been brought to many British colonies abroad including Ceylon and were described as being <em>'the most docile, most amenable labour force in the world'</em>. However, the British Indian government refused to permit the planters to bring these workers, citing the mistreatment of the South Sea Islanders in Queensland.</p>
+      <p>Planters in Queensland initially sought to obtain Indian Tamil labourers that had been brought to many British colonies abroad including Ceylon and were described as being <em>'the most docile, most amenable labour force in the world'</em><sup><a href="#ref-docker">3</a></sup>. However, the British Indian government refused to permit the planters to bring these workers, citing the mistreatment of the South Sea Islanders in Queensland.</p>
       <p>The planters then looked to Ceylon, where no legislation had been put in place due to lack of emigration and small population on the island. Although Indian Tamil labourers were unavailable, it was possible to hire the native population of Sinhalese people.</p>
       <p>Horace Burkitt of Bundaberg contacted his brother-in-law, Henry Caulfield, a resident in Ceylon to organise the recruitment of 500 workers.</p>
     </div>
@@ -85,7 +85,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-pullquote fade-in">
   <blockquote>
     <p>'Beyond attending to their village holdings and rice fields, they did not take up agricultural work, though they were first class timber fellers, good carpenters, sawyers and masons. Yet under different conditions and away from local influences they might make good agricultural labourers.'</p>
-    <cite>— Henry St George Caulfield, on the suitability of Sinhalese workers</cite>
+    <cite>— Henry St George Caulfield, on the suitability of Sinhalese workers<sup><a href="#ref-caulfield">4</a></sup></cite>
   </blockquote>
 </section>
 
@@ -94,14 +94,14 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
      ══════════════════════════════════════════════════════ -->
 <section class="sm-editorial fade-in">
   <div class="sm-editorial-img-wrap">
-    <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/coffee-workers-ceylon.jpeg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/coffee-workers-ceylon.jpeg" alt="Workers sorting coffee seeds in Ceylon in the late 1800s"></a>
-    <span class="sm-img-caption">Workers sorting coffee seeds in the late 1800s before the fall of the coffee industry · Source: Lankapura</span>
+    <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/ceylon_tea_pickers.jpg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/ceylon_tea_pickers.jpg" alt="Ceylon tea pickers"></a>
+    <span class="sm-img-caption">Tea pickers in Ceylon in the late 1800s around the time of the fall of the coffee industry (Unknown author, in the public domain)</span>
   </div>
   <div class="sm-editorial-body">
     <h2 class="sm-section-heading">Reasons for Emigration</h2>
     <div class="sm-body">
       <p>No mass migration out of Ceylon had occurred in the past century, and scholars cite several factors motivating these migrants to emigrate.</p>
-      <p>Swan writes the fall of the coffee industry in the 1870s and 1880s changing the attitudes of many who may not have otherwise decided to embark abroad. Caulfield cites adventurousness, writing that they were <em>'keen on seeing what the outside world was like'</em>.</p>
+      <p>Swan writes the fall of the coffee industry in the 1870s and 1880s changing the attitudes of many who may not have otherwise decided to embark abroad<sup><a href="#ref-swan">5</a></sup>. Caulfield cites adventurousness, writing that they were <em>'keen on seeing what the outside world was like'</em>.</p>
     </div>
   </div>
 </section>
@@ -119,8 +119,8 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     </div>
   </div>
   <div class="sm-split-visual fade-in fade-in-delay-1">
-    <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/ceylon-observer-contract.png" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img class="sm-img-contain" src="/assets/images/sri-lankan-migration/ceylon-observer-contract.png" alt="Contract published in the Ceylon Observer in 1882"></a>
-    <span class="sm-img-caption-below">The contract published in the <em>Ceylon Observer</em> in 1882 · Source: Sparkes, 1988</span>
+    <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/new-ceylon-observer.png" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img class="sm-img-contain" src="/assets/images/sri-lankan-migration/new-ceylon-observer.png" alt="Contract published in the Ceylon Observer in 1882"></a>
+    <span class="sm-img-caption-below">Extract of contract published in the <em>Ceylon Observer</em> in 1882 <em>(The Queenslander, 1882)</em></span>
   </div>
 </section>
 
@@ -140,7 +140,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-editorial fade-in">
   <div class="sm-editorial-img-wrap">
     <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/burnett-river-1909.jpg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/burnett-river-1909.jpg" alt="Burnett River, Bundaberg, 1909"></a>
-    <span class="sm-img-caption">Burnett River, Bundaberg, Queensland, 1909 · Source: State Library of Queensland</span>
+    <span class="sm-img-caption">Burnett River, Bundaberg, Queensland, 1909 (State Library of Queensland)</span>
   </div>
   <div class="sm-editorial-body">
     <h2 class="sm-section-heading">Journey and Reception in Australia</h2>
@@ -173,14 +173,14 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-editorial fade-in">
   <div class="sm-editorial-img-wrap">
     <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/south-sea-islanders-ship.jpg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/south-sea-islanders-ship.jpg" alt="South Sea Islanders on the deck of a ship arriving at Bundaberg, 1895"></a>
-    <span class="sm-img-caption">South Sea Islanders on the deck of a ship arriving at Bundaberg, 1895 · Source: State Library of Queensland</span>
+    <span class="sm-img-caption">South Sea Islanders on the deck of a ship arriving at Bundaberg, 1895 (State Library of Queensland)</span>
   </div>
   <div class="sm-editorial-body">
     <h2 class="sm-section-heading">Refusal to Work &amp; Fate in Queensland</h2>
     <div class="sm-body">
       <p>As evidenced by newspaper articles and records, many migrants refused to work, instead opting to go to jail. As a result, many workers broke their contracts, and drifted into other parts of Queensland and northern New South Wales. Many found it challenging to work due to the reluctance to hire non-Europeans.</p>
       <p>Those able to afford the return passage returned to Ceylon due to homesickness and oppressive conditions towards non-Europeans in Australia. As most had broken their contracts, many were no longer entitled to the free passage listed on their contracts and remained in Australia after federation in 1901. This is in contrast to many South Sea Islanders that were forcibly deported from Australia under the Pacific Island Labourers Act 1901. Those who remained on the Australian mainland quickly lost their cultural connections and identity.</p>
-      <p>Others migrated to Thursday Island in North-Eastern Queensland in the Torres Strait, where a significant number of non-European migration took place due to its proximity to Asia and the pearling industry. The formation of a distinct Sri Lankan community on Thursday Island is documented by Stanley Sparkes and Anna Shnukal in the book <em>Navigating Boundaries</em>.</p>
+      <p>Others migrated to Thursday Island in North-Eastern Queensland in the Torres Strait, where a significant number of non-European migration took place due to its proximity to Asia and the pearling industry. The formation of a distinct Sri Lankan community on Thursday Island is documented by Stanley Sparkes and Anna Shnukal in the book <em>Navigating Boundaries</em><sup><a href="#ref-shnukal">6</a></sup>.</p>
     </div>
   </div>
 </section>
@@ -243,7 +243,7 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 <section class="sm-editorial fade-in">
   <div class="sm-editorial-img-wrap">
     <a class="sm-img-zoom" href="/assets/images/sri-lankan-migration/mackay-harbour.jpg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab"><img src="/assets/images/sri-lankan-migration/mackay-harbour.jpg" alt="Mackay Harbour, Mackay, Queensland, 1950"></a>
-    <span class="sm-img-caption">Mackay Harbour, Mackay, Queensland, 1950 · Source: Mackay Regional Council Libraries</span>
+    <span class="sm-img-caption">Mackay Harbour, Mackay, Queensland, 1950 (Mackay Regional Council Libraries)</span>
   </div>
   <div class="sm-editorial-body">
     <h2 class="sm-section-heading">Methodology</h2>
@@ -607,11 +607,9 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
     <div class="sm-profile-tile fade-in" tabindex="0" role="button"
       data-name="Shamrow"
       data-dates="Born: Unknown, Bangalore, India · Died: Unknown"
+      data-img="/assets/images/sri-lankan-migration/profiles/shamrow-news.png"
       data-bio="&lt;p&gt;Shamrow was one of the few passengers onboard the Devonshire that was not of Ceylonese origin. He is described as a native of Bangalore, India and around thirty years old. He is mostly known through newspaper reports in the days following the ship’s arrival, as he became the group’s spokesperson with the media. He alleged that the group was mistreated on the voyage, with limited food rations and water allowed per person on hot, tropical days and a woman dying of neglect. He is last heard from in January 1883 in newspaper articles, where he petitioned local MPs to pressure the government into sending the group back to Ceylon.&lt;/p&gt;">
-      <div class="sm-profile-tile-initials">
-        <span class="sm-profile-tile-initials-letters">Sh</span>
-        <span class="sm-profile-tile-initials-name">Shamrow</span>
-      </div>
+      <img class="sm-profile-tile-img" src="/assets/images/sri-lankan-migration/profiles/shamrow-news.png" alt="Shamrow newspaper" loading="lazy">
       <div class="sm-profile-tile-label">
         <span class="sm-profile-tile-name">Shamrow</span>
         <span class="sm-profile-tile-years">Unknown – Unknown</span>
@@ -764,25 +762,31 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 
   <div class="sm-footer-inner fade-in">
     <h2 class="sm-section-heading" style="font-size:1.2rem;">Works Cited</h2>
-    <p>Caulfield, H. "Adventurous life of Henry Caulfield late Inspector of Pacific Islanders." <em>The Steering Wheel and Society and Home</em> 1 (1937).</p>
-    <p>Docker, Edward Wybergh. <em>The blackbirders: the recruiting of South Seas labour for Queensland, 1863–1907</em>. Angus &amp; Robertson, 1970.</p>
-    <p>Endagama, Pandula. "Sri Lankan Material Culture in North-East Queensland: A Study of Acculturation." PhD diss., James Cook University of North Queensland. Material Culture Unit, 1981.</p>
-    <p>Shnukal, Anna, Guy Ramsay, and Yuriko Nagata. <em>Navigating boundaries: the Asian diaspora in Torres Strait</em>. Canberra, ACT: Pandanus Books, 2017.</p>
-    <p>Sparkes, Stanley J. <em>Sri Lankan Migrants in Queensland in the Nineteenth Century</em>. S. Sparkes, 1988.</p>
-    <p>Swan, Bernard. "Sinhalese emigration to Queensland in the nineteenth century: a note." <em>Journal of the Royal Australian Historical Society</em> 67, no. June 1981 (1981): 55–63.</p>
-    <p>Weerasooria, Wickrema S. <em>Links Between Sri Lanka and Australia: A Book about the Sri Lankans (Ceylonese) in Australia</em>. Government Press, 1988.</p>
+    <ol>
+      <li id="ref-caulfield">Caulfield, H. "Adventurous life of Henry Caulfield late Inspector of Pacific Islanders." <em>The Steering Wheel and Society and Home</em> 1 (1937), p. 60.</li>
+      <li id="ref-docker">Docker, Edward Wybergh. <em>The blackbirders: the recruiting of South Seas labour for Queensland, 1863–1907</em>. Angus &amp; Robertson, 1970, p. 164.</li>
+      <li>Endagama, Pandula. "Sri Lankan Material Culture in North-East Queensland: A Study of Acculturation." PhD diss., James Cook University of North Queensland. Material Culture Unit, 1981.</li>
+      <li id="ref-irvine">Irvine, H. <em>Sweet and Sour: Accounting for South Sea Islanders Labour at a North Queensland Sugar Mill in the Late 1800s</em>. University of Wollongong, 2004.</li>
+      <li id="ref-rains">Rains, K. <em>Journeys to Sugaropolis: The Australian South Sea Islander Story of the Gold Coast Region</em>. 1st ed. City of Gold Coast, 2013.</li>
+      <li id="ref-shnukal">Shnukal, Anna, Guy Ramsay, and Yuriko Nagata. <em>Navigating boundaries: the Asian diaspora in Torres Strait</em>. Canberra, ACT: Pandanus Books, 2017.</li>
+      <li>Sparkes, Stanley J. <em>Sri Lankan Migrants in Queensland in the Nineteenth Century</em>. S. Sparkes, 1988.</li>
+      <li id="ref-swan">Swan, Bernard. "Sinhalese emigration to Queensland in the nineteenth century: a note." <em>Journal of the Royal Australian Historical Society</em> 67, no. June 1981 (1981): 55–63.</li>
+      <li>Weerasooria, Wickrema S. <em>Links Between Sri Lanka and Australia: A Book about the Sri Lankans (Ceylonese) in Australia</em>. Government Press, 1988.</li>
+    </ol>
   </div>
 
   <div class="sm-footer-inner fade-in">
     <h2 class="sm-section-heading" style="font-size:1.2rem;">Image Credits</h2>
-    <p>David Pattinson. <em>Bundaberg Sugarcane</em>. 2013. CC BY-NC-SA 2.0.</p>
-    <p>State Library of Queensland. <em>South Sea Islander farm workers on a sugar plantation at Cairns</em>, 1890. Flickr: The Commons; no known copyright restrictions.</p>
-    <p>State Library of Queensland. <em>South Sea Islanders on the deck of a ship arriving at Bundaberg</em>, 1895. Out of copyright.</p>
-    <p>State Library of Queensland. <em>Burnett River, Bundaberg, Queensland</em>, 1909. Out of copyright.</p>
-    <p>Mackay Regional Council Libraries. <em>Mackay Harbour, Mackay, Qld</em>, 1950.</p>
-    <p><em>Workers sorting coffee seeds in Ceylon, late 1800s</em>. Sourced via Lankapura.</p>
-    <p><em>Contract published in the Ceylon Observer, 1882</em>. Reproduced from Sparkes, S. J. (1988), <em>Sri Lankan Migrants in Queensland in the Nineteenth Century</em>.</p>
-    <p>Henry St George Caulfield. Published in <em>"Adventurous Life Of Henry Caulfeild, Late Inspector of Pacific Islanders"</em>, The Steering Wheel and Society &amp; Home, 1937. Out of copyright.</p>
+    <ol>
+      <li>David Pattinson. <em>Bundaberg Sugarcane</em>. 2013. CC BY-NC-SA 2.0.</li>
+      <li>State Library of Queensland. <em>South Sea Islander farm workers on a sugar plantation at Cairns</em>, 1890. Flickr: The Commons; no known copyright restrictions.</li>
+      <li>State Library of Queensland. <em>South Sea Islanders on the deck of a ship arriving at Bundaberg</em>, 1895. Out of copyright.</li>
+      <li>State Library of Queensland. <em>Burnett River, Bundaberg, Queensland</em>, 1909. Out of copyright.</li>
+      <li>Mackay Regional Council Libraries. <em>Mackay Harbour, Mackay, Qld</em>, 1950.</li>
+      <li><em>Tea-pickers, Colombo, Ceylon</em>, late 1800s. Public domain (Creative Commons Public Domain Mark 1.0), via <a href="https://commons.wikimedia.org/wiki/File:Tea-pickers,_Columbo,_Ceylon;_an_albumen_photo,_late_1800%27s.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</li>
+      <li><em>Contract published in the Ceylon Observer, 1882</em>. Reproduced in "The Cingalese Immigrants." <em>The Queenslander</em> (Brisbane, Qld. : 1866–1939), 2 December 1882, p. 795. Retrieved September 19, 2026, from <a href="http://nla.gov.au/nla.news-article19788141" target="_blank" rel="noopener">nla.gov.au/nla.news-article19788141</a>.</li>
+      <li>Henry St George Caulfield. Published in <em>"Adventurous Life Of Henry Caulfeild, Late Inspector of Pacific Islanders"</em>, The Steering Wheel and Society &amp; Home, 1937. Out of copyright.</li>
+    </ol>
   </div>
 
   <div class="sm-footer-inner fade-in">
@@ -792,11 +796,11 @@ description: "What happened to the 500 Sri Lankans who came to Queensland onboar
 
   <div class="sm-footer-inner fade-in">
     <h2 class="sm-section-heading" style="font-size:1.2rem;">Archival Records</h2>
-    <p>Dunwich Benevolent Asylum and Peel Island Lazaret admission forms, and the prison photograph of Charles Deen, are © State of Queensland (<a href="https://www.archives.qld.gov.au/" target="_blank" rel="noopener">Queensland State Archives</a>) and reproduced here under <a href="https://creativecommons.org/licenses/by/3.0/au/" target="_blank" rel="noopener">Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)</a>. The asylum admission forms were scanned and shared with permission by John Winterbotham via Find A Grave memorial pages, with thanks for his generosity in making these records accessible to researchers.</p>
+    <p>Dunwich Benevolent Asylum and Peel Island Lazaret admission forms, and prison photographs, are © State of Queensland (<a href="https://www.archives.qld.gov.au/" target="_blank" rel="noopener">Queensland State Archives</a>) and reproduced here under <a href="https://creativecommons.org/licenses/by/3.0/au/" target="_blank" rel="noopener">Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU)</a>. The asylum admission forms were scanned and shared with permission by John Winterbotham via Find A Grave memorial pages, with thanks for his generosity in making these records accessible to researchers.</p>
   </div>
 
   <div class="sm-footer-inner fade-in">
     <h2 class="sm-section-heading" style="font-size:1.2rem;">Research Status</h2>
-    <p>This page replicates research originally published in 2022 as an Esri ArcGIS StoryMap at <a href="https://arcg.is/1rPCaq" target="_blank" rel="noopener">https://arcg.is/1rPCaq</a>, completed as part of Lafayette College's Digital Humanities Summer Scholars programme. The original StoryMap is no longer publicly accessible due to changes in institutional hosting; this self-hosted Jekyll reproduction preserves the work in a stable form. Profiles and identifications reflect the evidence available in June 2022. Source attributions, citations, and compliance notices have been updated since publication; research findings themselves have not been revised on this site. Investigation has continued, and the current working dataset includes additional individuals, candidate reclassifications, and corrections that are not reflected here.</p>
+    <p>This page replicates my research website originally published in 2022 as an Esri ArcGIS StoryMap completed as part of Lafayette College's Digital Humanities Summer Scholars programme. The original link no longer works since I graduated, so this self-hosted Jekyll reproduction preserves the page. Although the webpage remains largely the same, I have continued to update the profiles based on new findings and corrections.</p>
   </div>
 </section>

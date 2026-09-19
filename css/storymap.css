@@ -839,8 +839,8 @@
 .sm-modal-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  object-fit: contain;
+  object-position: center center;
   display: block;
   transition: opacity 0.18s ease;
 }
@@ -972,8 +972,9 @@
   margin: 0 0 0.7em;
 }
 
-.sm-footer-inner ul {
-  padding-left: 1.2em;
+.sm-footer-inner ul,
+.sm-footer-inner ol {
+  padding-left: 1.4em;
   margin: 0;
 }
 
