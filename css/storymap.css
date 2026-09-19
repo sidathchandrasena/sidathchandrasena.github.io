@@ -309,6 +309,19 @@
   color: var(--c-ink-warm);
 }
 
+sup {
+  font-size: 0.65em;
+  line-height: 0;
+}
+
+sup a {
+  text-decoration: none;
+}
+
+[id] {
+  scroll-margin-top: 90px;
+}
+
 .sm-body ul {
   padding-left: 1.4em;
   margin: 0.5em 0 0.9em;
