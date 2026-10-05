@@ -5,12 +5,12 @@ excerpt:
 
 ## Entry 12: Contrails on the Busy SYD to MEL Route?
 
-Today we're going to look at another region of interest I found earlier that also happens to be the busiest air route in the English speaking world: Sydney to Melbourne.
+Today we're going to look at another region of interest I found earlier that also happens to be the busiest air route in the English speaking world ([source](https://www.oag.com/busiest-routes-world-2025)): Sydney to Melbourne.
 
 #### Joining the Dataset
 I repeated the same steps as Entry 11 here, except that the contrails data was filtered for the SYD-MEL flight corridor instead of Western Australia.
 
-Next, I filtered the dataset using the standingdata table to check whether each flight had origin/destination as SYD-MEL or MEL-SYD, or was a multi-stop route that included either of the two. In some cases, the route equivalent could not be found in the merge with standingdata and was labeled as unknown, resulting in the following:
+Next, I filtered the dataset using the [standingdata](https://github.com/vradarserver/standing-data?tab=CC0-1.0-1-ov-file) table to check whether each flight had origin/destination as SYD-MEL or MEL-SYD, or was a multi-stop route that included either of the two. In some cases, the route equivalent could not be found in the merge with [standingdata](https://github.com/vradarserver/standing-data?tab=CC0-1.0-1-ov-file) and was labeled as unknown, resulting in the following:
 
 ```
 route_group
@@ -20,7 +20,7 @@ MEL-SYD     1452
 Name: count, dtype: int64
 ```
 
-Next, I created a table that identified a "hit" as when contrail probability was greater than zero. This was separated into MEL-SYD and other flights and unknown, and what percentage of hits each category made.
+Next, I created a table that identified a "hit" as when contrail forcing index was greater than zero. This was separated into MEL-SYD and other flights and unknown, and what percentage of hits each category made.
 
 ```
 	points	hits	share_of_hits	hit_rate	ci
@@ -50,7 +50,7 @@ On the left, we have the distribution of the "hits" (places where the point was 
 
 
 
-![Alt text](/assets/images/entry_12_mel_syd_hits.png)
+![Comparison of MEL-SYD with other routes in contrail-forming air](/assets/images/entry_12_mel_syd_hits.png)
 
 So we can see that on the left plot, "other" flights account for a large portion of the hits. But that's also expected given that MEL-SYD is one out of many routes in that corridor. On the right however, we can see that the MEL-SYD route has a much higher amount of "hits". More analysis will need to be done to discover when this occurs. Is it at cruising altitude?
 
@@ -58,6 +58,10 @@ So we can see that on the left plot, "other" flights account for a large portion
 
 I thought it would be interesting to visually see what all of this looked like on a map. 
 
-![Alt text](/assets/images/entry_12_mel_syd_map.png)
+![Map showing MEL-SYD route](/assets/images/entry_12_mel_syd_map.png)
 
-We can see two main trajectories between Melbourne and Sydney with points in contrail-forming air. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-laden areas?
+We can see two main trajectories that are reasonably busy between Melbourne and Sydney with several points in contrail-forming air, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-laden areas?
+
+<br>
+#### Concluding Remarks
+It has been fascinating to compare FIFO services in Interior WA with a much busier part of airspace in Australia. As I look at the above map, I am curious on what makes up the busy air corridor between Melbourne and Sydney. FIFO services tend to be in rural SA, QLD and WA - are they virtually non-existent here? If not, then which group of flights make up the "other" seen in the chart, and are they international or domestic?

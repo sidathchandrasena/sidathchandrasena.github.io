@@ -13,7 +13,7 @@ In this post, both datasets cover the same eight-day window of **3-11 April 2026
 ### Datasets
 #### Dataset A: `contrail_grids`
 
-This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a probability value between 0 and 1. My dataset only retains squares with a value greater than 0.1. 
+This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a CFI value between 0 and 1. My dataset only retains squares with a value greater than 0.001. 
 
 The dataset is in autumn 2026, and a lot smaller in size compared to previous datasets during the winter 2025 timeframe. Ice supersaturated regions are a primary catalyst for contrails and winter in Australia experiences a greater frequency of ice supersaturation than autumn.
 
@@ -26,7 +26,7 @@ To summarise Dataset A:
 | **Temporal resolution** | 6-hour intervals (00:00, 06:00, 12:00, 18:00 UTC) |
 | **Spatial resolution** | 0.25° × 0.25° grid (≈28 km at Australian latitudes) |
 | **Altitude range** | FL270–FL440 (18 levels) |
-| **Total rows stored** | 234,817 cells (probability > 0.1) across 36 snapshots |
+| **Total rows stored** | 234,817 cells (CFI > 0.1) across 36 snapshots |
 
 
 The figure below shows how each bar represents one 6-hour ERA5 snapshot.  
@@ -72,7 +72,7 @@ For most of the 8-day window, the red and blue lines are far apart. The only exc
 
 ### Where does this risk occur (on an Australian map)?
 
-The heatmap placed over the map of Australia below shows the **Compound Risk Score (CRS) = total aircraft observations in that cell x mean contrail probability**, meaning cells where aircraft flew through active contrail risk.
+The heatmap placed over the map of Australia below shows the **Compound Risk Score (CRS) = total aircraft observations in that cell x mean contrail forcing index**, meaning cells where aircraft flew through active contrail risk.
 
 There are some notable clusters of purple - the Western Australia interior and Bass Strait. The Tasman Sea to the right also showed some intersection of contrail risk and flight traffic to a lesser extent than seen earlier in Entry 5.
 
@@ -90,7 +90,7 @@ The blue line (left axis) shows the average number of aircraft in the sky at eac
 
 The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at UTC 15:00 (01:00 AEST), so the middle of Australian overnight and has a low at UTC 01:00-02:00 (10:30 AEST).
 
-The key finding here is that the hours with the most air traffic (UTC 22:00-02:00, morning to midday AEST) are not the most dangerous for contrail exposure, but rather the quieter overnight window.
+The key finding here is that the hours with the most air traffic (UTC 22:00-02:00, morning to midday AEST) are not the most prone to contrail exposure, but rather the quieter overnight window.
 
 ----
 

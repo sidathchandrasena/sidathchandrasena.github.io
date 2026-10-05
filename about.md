@@ -46,7 +46,7 @@ noindex: true
 <details class="accordion">
   <summary>What this project seeks to find</summary>
   <div class="accordion-body">
-    <p>My research questions continue to evolve as I create each new post and gain more knowledge. For now, this project focuses on understanding which regions in Australia have the highest air traffic and where contrail formation probability is most likely, and if they coincide. Then exploring what strategies could be used to prevent contrails forming from commercial aircraft exhaust.</p>
+    <p>My research questions continue to evolve as I create each new post and gain more knowledge. For now, this project focuses on understanding which regions in Australia have the highest air traffic and where contrail formation is most likely, and if they coincide. Then exploring what strategies could be used to prevent contrails forming from commercial aircraft exhaust.</p>
   </div>
 </details>
 

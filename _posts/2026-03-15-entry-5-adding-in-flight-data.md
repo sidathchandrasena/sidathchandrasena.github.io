@@ -1,11 +1,11 @@
 ---
 preview_image: entry_5_overlay.png
-excerpt: Overlaying real ADS-B flight traffic data on contrail risk maps — where do Australia's busiest corridors actually intersect with high contrail probability?
+excerpt: Overlaying real ADS-B flight traffic data on contrail risk maps — where do Australia's busiest corridors actually intersect with high contrail forcing index?
 ---
 
 ## Entry 5: Adding in Flight Data
 
-In previous posts, we looked purely at contrail formation probability based on altitude and coordinates. In this post, we're going to add a flight traffic layer to move from "where do contrails form" to "where do contrails form where there is also high air traffic?".
+In previous posts, we looked purely at contrail formation index based on altitude and coordinates. In this post, we're going to add a flight traffic layer to move from "where do contrails form" to "where do contrails form where there is also high air traffic?".
 
 The data we need to find this out is ADS-B data, which provides insights into flight traffic. To get ADS-B data, I created an account on OpenSky. However, a standard account restricts queries to the last hour and I need researcher access to match the May-Jul 2025 window that matches the Contrails data timeframe. For now, assuming that flight routes remain largely are stable year-round, I can use existing data to get some insights. Using this, I got four insightful plots.
 
@@ -30,7 +30,7 @@ Another cell of interest is −41.00°S, 146.50°E which is over the Bass Strait
 
 ### Plot 3: Altitude Alignment: Are Planes at the Riskiest Flight Levels?
 
-The left plot is from last post with the different altitudes distributions shown by contrail risk probability. 
+The left plot is from last post with the different altitudes distributions shown by contrail forcing index. 
 
 The below FL distribution on the right comes from the 20 snapshots of OpenSky data. Each snapshot returns real-time state vector data for every transponder visible to ground receivers. One of these quantities is barometric altitude in metres, which was converted here to ft.
 
@@ -46,7 +46,7 @@ In earlier posts, we observed that FL340-FL390 is where contrail risk peaks for 
 
 ### Main Takeaway
 
-For the most part, there is little overlap seen here between air traffic and contrail formation probability. However, it is valuable to note the Bass Strait as one area of interest for further study on this topic.
+For the most part, there is little overlap seen here between air traffic and contrail forcing index. However, it is valuable to note the Bass Strait as one area of interest for further study on this topic.
 
 At the same time, it is important to note that the data used captures a small snapshot of time and the ADSB data is even more limited, not accounting for areas such as the NT, which may potentially yield interesting results. In addition to the Bass Strait, I want to repeat the same analysis for other time periods and use more extensive data to get more insights.
 

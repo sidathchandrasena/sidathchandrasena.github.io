@@ -56,7 +56,7 @@ df_au.head(2)
 #### Plot 1: FIFO vs non-FIFO - Hour of Day 
 For the first plot, I wanted to view how FIFO vs non-FIFO flights frequency differs in time of day, keeping in mind that ADSB.fi data is real-time traffic rather than scheduled departure. So I grabbed the earliest seen point of each flight and got the following plot.
 
-![Alt text](/assets/images/entry_9_fifo_hour_of_day.png)
+![FIFO vs non-FIFO flight frequency by hour of day](/assets/images/entry_9_fifo_hour_of_day.png)
 
 FIFO flights compared to non-FIFO peak around 7am and 5pm. Before 7am, non-FIFO flights dominate, between 10am-2pm and 6-8pm. This seems to align well with many (paywalled) articles online depicting how extremely early FIFO flights have led to some health concerns over poor sleep quality and risks of car accidents to and from the airport. One example of an article that explores this is Maisey et al<sup><a href="#ref7">7</a></sup>.
 
@@ -64,7 +64,7 @@ FIFO flights compared to non-FIFO peak around 7am and 5pm. Before 7am, non-FIFO 
 #### Plot 2: FIFO vs non-FIFO - Day of the Week
 I also wanted to see whether the above mentioned rosters may be reflected when plotted against the days of the week.
 
-![Alt text](/assets/images/entry_9_fifo_day_of_week.png)
+![FIFO vs non-FIFO flight frequency by day of week](/assets/images/entry_9_fifo_day_of_week.png)
 
 Very interesting. Here we can see that FIFO flights consistently make a higher proportion of air traffic in Australian airspace Mon-Thurs, and then at the end of the week (Fri-Sun), commercial flights make up a much higher proportion.
 

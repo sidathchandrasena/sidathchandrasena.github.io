@@ -16,7 +16,7 @@ Next, the rounded timestamp column was filtered in the ADS-B dataset to make sur
 
 Then the rounded matching columns in the ADS-B dataset were renamed to match the contrails dataset and a left merge was performed.
 
-The `fillna()` command was run on contrail probability for rows where there was no match, as this indicates a contrail probability of zero. Then, the combined dataset was filtered for cases where a contrail probability higher than zero was found so we can look at "at-risk" observations.
+The `fillna()` command was run on `contrails` for rows where there was no match, as this indicates a contrail forcing index of zero. Then, the combined dataset was filtered for cases where a CFI > 0.001 was found so we can look at "at-risk" observations.
 
 Next, I created a new variable called `local_date` to convert the timestamp from UTC to Perth time.
 
@@ -26,7 +26,7 @@ Next, I imported the FIFO dataset labeled from last entry and then performed an 
 #### Visualising the Results
 I first wanted to see how many of the flights in the dataset that pass through contrail-forming air are FIFO or non-FIFO by percentage.
 
-![Alt text](/assets/images/entry_11_contrail_distribution.png)
+![Flights that passed through contrail-forming air FIFO vs non-FIFO](/assets/images/entry_11_contrail_distribution.png)
 
 The plot accounts for the different frequencies between non-FIFO and FIFO flights. Considering non-FIFO flights are almost double in frequency, this is an intriguing result.
 
@@ -34,12 +34,12 @@ The plot accounts for the different frequencies between non-FIFO and FIFO flight
 
 The next plot shows the altitude distribution of among FIFO and non-FIFO flights. The right-hand plot shows when you filter out observations that were rounded to beyond 1 hour of the recorded time (given contrails data was every 6 hours, this accounts for a big disparity between the observation and time. However, on the other hand, this means a significantly smaller number of observations).
 
-![Alt text](/assets/images/entry_11_altitude_distribution.png)
+![FIFO vs non-FIFO by Altitude](/assets/images/entry_11_altitude_distribution.png)
 
 As seen above, non-FIFO flights dominate at altitudes beyond FL340 and contrail-prone altitudes as well. Maybe due to FIFO flights having small aircraft? Let's verify that.
 
 <br>
-![Alt text](/assets/images/entry_11_aircraft_distribution.png)
+![FIFO vs non-FIFO routes by frequency](/assets/images/entry_11_aircraft_distribution.png)
 
 Let's compare the difference between the cruising altitude of a Fokker 100 with a Boeing 737-800. Fokker 100 has a max cruising altitude of 35,000 ft ([source](https://aeropedia.com.au/content/fokker-100/)) while Boeing 737-800 has a max cruising altitude of 41,000 ft ([source](https://www.rocketroute.com/aircraft/boeing-737-800)). This explains a lot.
 
@@ -47,7 +47,7 @@ Let's compare the difference between the cruising altitude of a Fokker 100 with 
 <br>
 Now let's look at the aircraft distribution amongst FIFO and non-FIFO flights in at-risk regions. 
 
-![Alt text](/assets/images/entry_11_fleet_distribution.png)
+![Comparing Aircraft Type FIFO vs non-FIFO](/assets/images/entry_11_fleet_distribution.png)
 
 What I find to be interesting here is the big difference the number of observations between the top and bottom bar of FIFO and non-FIFO, despite being the same aircraft. Also the Boeing 737-MAX at second from top, and then Boeing 737-800 below, is that to do with the increased adoption of MAX aircraft in domestic Australia? 
 

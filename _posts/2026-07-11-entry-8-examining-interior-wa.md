@@ -14,7 +14,7 @@ One region we also discovered last entry was Interior WA. Today's entry will tak
 ## The Data
 While entry 7 had eight days worth of data that aligns between ADSB air traffic and Google Contrails data, for today's analysis, we have data spanning across 24 days between 3-26 April, 2026.
 
-The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with probability over 0.1%, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the contrail probability and air traffic. 
+The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with CFI over 0.1%, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the CFI and air traffic. 
 
 
 In code, this was written as follows:
@@ -63,7 +63,7 @@ The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. 
 </figure>
 
 
-## Map of Observations by Contrail Risk Probability
+## Map of Observations by Contrail Forcing Index
 Below is a way to visualise everything from a bigger picture point of view with routes out of Perth visible. 
 
 <figure>

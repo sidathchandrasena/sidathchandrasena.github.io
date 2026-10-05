@@ -29,18 +29,18 @@ Looks ready for some more analysis!
 ## Analysis
 Now we have around 2 month's worth of data, we can look into contrail formation in Australia during the winter period.
 
-From an initial look at the dataset, it was found that **97.1%** of contrail_probability values were found to be zero. It is important to note here that this is not measured data, but a ML model's output trained on atmospheric data. So this may reflect the model's limitations in data-sparse regions rather than the actual atmospheric conditions.
+From an initial look at the dataset, it was found that **97.1%** of `contrails` values were found to be zero. It is important to note here that the `contrails` variable is an output from the Google Contrails API that is not measured data, but rather an index that comes from a combination of satellite observations, ML model's output and CoCiP (Contrail Cirrus Prediction) ([source](https://developers.google.com/contrails/v1/forecast-description)). So this may reflect the model's limitations in data-sparse regions rather than the actual atmospheric conditions.
 
 To get more meaningful results from the data, two variables were created to quantify the frequency and intensity of contrails.
 
-**Mean contrail probability:**  Filters to rows where contrail_probability > 0 then averaging within groups. Answers question of: how intense are contrails when they form?
+**Mean contrail forcing index:**  Filters to rows where `contrails` > 0 then averaging within groups. Answers question of: how intense are contrails when they form?
 
-**Contrail Frequency:** A binary flag per timestamp which returns 1 if contrail_probability > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of the time do contrails form here at all?"
+**Contrail Frequency:** A binary flag per timestamp which returns 1 if `contrails` > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of the time do contrails form here at all?"
 
 These 2 variables were then represented spatially using GeoPandas, shapefiles of Australia and coordinates of major cities using the longitudes & latitudes, resulting in these plots:
 
-### Plot 1: Mean Contrail Probability
-![Mean Contrail Probability Hotspot Map](/assets/images/entry_3_hotspot_mean.png)
+### Plot 1: Mean Contrail Forcing Index
+![Mean Contrail Forcing Index Hotspot Map](/assets/images/entry_3_hotspot_mean.png)
 
 
 ### Plot 2: Contrail Frequency

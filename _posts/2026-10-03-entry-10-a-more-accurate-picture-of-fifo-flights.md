@@ -34,7 +34,7 @@ I decided to filter using icao24 which are 24-bit addresses using Australia's he
 I then merged this with OpenSky data on the icao24 column which gave me information such as: operator, owner, and aircraft. 
 
 
-![Alt text](/assets/images/entry_10_flights_by_carrier.png)
+![Frequency of flights by operator in WA](/assets/images/entry_10_flights_by_carrier.png)
 
 Interestingly, QLK callsign for Qantaslink is completely absent from WA due to the QantasLink brand being completely operated by Network Aviation there. Virgin Australian Regional Airlines and Virgin Australia are also indistinguishable by callsign.
 
@@ -88,12 +88,12 @@ none                      0        0     4474          0
 
 Next, I plotted my plots from Entry 9 with the newly filtered and more accurate Entry 10 data to compare FIFO vs non-FIFO flights in day of week and time of day.
 
-![Alt text](/assets/images/entry_10_comparison_time_of_day.png)
+![FIFO vs non-FIFO in WA by hour of day compared with Entry 9](/assets/images/entry_10_comparison_time_of_day.png)
 
 The effects are much more pronounced for FIFO flights, with a large majority of flights occurring early in the day or around 5pm. This is explained as the "morning wave", where workers arrive early to get to the site and work their 12-hour days by mid-morning<sup><a href="#ref5">5</a></sup>. The rise in the afternoon is explained by workers completing their shifts and returning to Perth where they commute home<sup><a href="#ref6">6</a></sup>. 
 
 
-![Alt text](/assets/images/entry_10_comparison_day_of_week.png)
+![FIFO vs non-FIFO in WA by day of week compared with Entry 9](/assets/images/entry_10_comparison_day_of_week.png)
 
 Compared to Entry 9, we see a more visible split in proportion of weekend flights for FIFO compared to non-FIFO Saturday through Monday and then more FIFO flights occurring on weekdays. Weekend flights are uncommon for FIFO perhaps because weekends result in penalty rates for crew (higher expenses) and there are limited flights in regional areas on weekends.
 
