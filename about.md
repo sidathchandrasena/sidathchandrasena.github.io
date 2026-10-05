@@ -18,14 +18,14 @@ noindex: true
   <summary>Why contrails matter</summary>
   <div class="accordion-body">
     <p>Aircraft are responsible for around 2% of total global warming<sup><a href="#ref1">1</a></sup> and the aviation industry continues to grow post-pandemic. CO2 emissions make up most of the exhaust, but contrails from water vapour make up a majority of non-CO2 emissions.</p>
-    <p>Contrails do this by trapping heat in the atmosphere — with some estimates putting their warming effect on par with or exceeding that of aviation's direct carbon emissions<sup><a href="#ref2">2</a></sup>. As air traffic continues to grow, so does the scale of this effect. Recent research has complicated the picture further: warming estimates vary widely, and contrails forming inside existing cloud cover may behave very differently to those in clear skies. There is still a lot we don't fully understand.</p>
+    <p>Contrails do this by trapping heat in the atmosphere, with some estimates putting their warming effect on par with or exceeding that of aviation's direct carbon emissions<sup><a href="#ref2">2</a></sup>. As air traffic continues to grow, so does the scale of this effect. Recent research has complicated the picture further: warming estimates vary widely, and contrails forming inside existing cloud cover may behave very differently to those in clear skies. There is still a lot we don't fully understand.</p>
   </div>
 </details>
 
 <details class="accordion">
   <summary>Why focus on Australia?</summary>
   <div class="accordion-body">
-    <p>Most contrail research has focused on Europe and North America — regions with dense air traffic and well-studied atmospheres. After all, it was found in one study that North America, Europe and the North Atlantic account for more than one half of contrail warming effects globally.<sup><a href="#ref4">4</a></sup></p>
+    <p>Most contrail research has focused on Europe and North America, which are regions with dense air traffic and well-studied atmospheres. After all, it was found in one study that North America, Europe and the North Atlantic account for more than one half of contrail warming effects globally.<sup><a href="#ref4">4</a></sup></p>
     <p>Australia is comparatively underexplored, despite having a unique atmospheric environment and a heavy reliance on long-haul air travel due to its geographic isolation. Google's Project Contrails, for example, hopes to extend its models to places in Oceania in the future.<sup><a href="#ref3">3</a></sup></p>
   </div>
 </details>
