@@ -57,4 +57,4 @@ Perhaps this should be taken with some skepticism, however, as the right-hand pl
 #### Concluding Remarks
 These findings can take us in many directions. What I am most curious from today's results is identifying which FIFO aircraft are responsible for those results in the contrail risk zone. I am guessing that they are those flights in those planes that match the common planes for non-FIFO services, such as Airbus A320s and Boeing 737-800s. From this I wonder: what prompts a FIFO service or charter to be done in a large passenger jet as opposed to a small one? What are those routes? What are the implications of a shift in aircraft operation on the mining industry and the FIFO workforce?
 
-I plan to take a small break from looking at FIFO work to compare this to another region of interest identified in a previous entry: the infamous Melbourne-Sydney route.
+I plan to take a small break from looking at FIFO work to compare this to another region of interest identified in a previous entry: the infamous Sydney-Melbourne route.
