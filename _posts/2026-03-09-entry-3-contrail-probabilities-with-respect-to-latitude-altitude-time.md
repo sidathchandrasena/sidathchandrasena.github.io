@@ -1,6 +1,6 @@
 ---
 preview_image: entry_4_alt_lat_mean.png
-excerpt: Breaking down contrail forcing index by latitude, flight level, and time of day — and why the Southern Ocean dominates risk at every UTC hour.
+description: Breaking down contrail forcing index by latitude, flight level, and time of day with interesting observations in the Southern Ocean.
 ---
 
 ## Entry 3: Contrail Probabilities with Respect to Latitude, Altitude + Time
@@ -28,9 +28,11 @@ Plots 1 and 2 are heatmaps which aggregate the data to compare Mean Contrail For
 | 17°S | Darwin / north Kimberley |
 | 10°S | Northern edge of the data domain, above Cape York |
 
+<br>
 ### Plot 1: Mean Contrail Forcing Index by Flight Level & Latitude
 ![Mean Contrail Forcing Index by Flight Level and Latitude](/assets/images/entry_4_alt_lat_mean.png)
 
+<br>
 ### Plot 2: Contrail Frequency by Flight Level & Latitude
 ![Contrail Frequency by Flight Level and Latitude](/assets/images/entry_4_alt_lat_freq.png)
 
@@ -40,23 +42,25 @@ Plots 1-2 give some helpful insight by adding flight altitudes in addition to lo
 ---
 In addition to altitudes, we can also look at how the time of day may change the level of contrail risk:
 
+<br>
 ### Plot 3: Overall Diurnal Signal
 ![Overall Diurnal Contrail Signal](/assets/images/entry_4_diurnal_overall.png)
 
 
-As we see above in Plots 3 and 4, there are noticeable differences in the bar plots, so conditions are not uniform in time, with contrail forcing index highest at around midnight UTC, which translates to around 10am-12pm AEST.
+As we can see above, there are noticeable differences in the bar plots so conditions are not uniform in time, with contrail forcing index highest at around 14 UTC, which is around 10am-12pm AEST.
 
-We can also further examine the results of this bar plot by splitting it into different latitudes as discussed above:
-
+<br>
 ### Plot 4: Diurnal Signal by Latitude Band
+We can also further examine the results of this bar plot by splitting it into different latitudes as discussed above:
 ![Diurnal Contrail Signal by Latitude Band](/assets/images/entry_4_diurnal_by_band.png)
 
-Both plots reveal midnight UTC to be the peak, with the Southern Ocean band dominating by 3-7x at every UTC hour. Noon which translates to around 10pm-12am midnight AEST is the trough. 
+Both plots reveal 14 UTC (midnight AEST) to be the peak, with the Southern Ocean band dominating by 3-7x at every UTC hour, and with 02 UTC (Noon AEST) as the trough. 
 
+<br>
 ### The main takeaway
-From what we have, we observed that contrail formation conditions are the highest during the morning and lowest late at night. How does this compare to what is mentioned online?
+From what we have, we observed that contrail formation conditions are the highest overnight and lowest around midday. How does this compare to what is mentioned online?
 
-It is found that the season with the highest amount of contrails is winter, which is when this dataset was recorded.<sup>[[1]](#ref1)</sup> Early morning flights tend to create "cooling contrails" as some of the incoming sunlight is reflected back into space<sup>[[2]](#ref2)</sup> while late night flights create contrails with the highest warming contribution.<sup>[[1]](#ref1)</sup> This demonstrates how contrail formation conditions do not necessarily equate to high amounts of warming.
+It is found that the season with the highest amount of contrails is winter, which is when this dataset was recorded.<sup><a href="#ref1">1</a></sup> Early morning flights tend to create "cooling contrails" as some of the incoming sunlight is reflected back into space<sup><a href="#ref2">2</a></sup> while late night flights create contrails with the highest warming contribution.<sup><a href="#ref1">1</a></sup> This demonstrates how contrail formation conditions do not necessarily equate to high amounts of warming.
 
 ---
 

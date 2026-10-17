@@ -1,6 +1,6 @@
 ---
-preview_image:
-excerpt:
+preview_image: entry_8_corridor_map.png
+description: Looking at a bigger set of matched contrails and ADS-B data to reveal where contrail hotspots may be in Western Australia in April 2026.
 ---
 
 ## Entry 8: Examining Interior WA
@@ -14,15 +14,15 @@ One region we also discovered last entry was Interior WA. Today's entry will tak
 ## The Data
 While entry 7 had eight days worth of data that aligns between ADSB air traffic and Google Contrails data, for today's analysis, we have data spanning across 24 days between 3-26 April, 2026.
 
-The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with CFI over 0.1%, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the CFI and air traffic. 
+The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with CFI>0.001, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the CFI and air traffic. 
 
 
 In code, this was written as follows:
 
 ```python
-# contrail_prob = the forecast probability in the grid cell each sighting was
+# contrail_prob = the CFI in the grid cell each sighting was
 #                 snapped to (0 if the plane was in clear air)
-exposure["in_risk"] = exposure["contrail_prob"] > 0.001   # > 0.1%  →  at-risk (True / False)
+exposure["in_risk"] = exposure["contrail_prob"] > 0.001   # > 0.001  →  at-risk (True / False)
 n_at_risk = exposure["in_risk"].sum()                     # count the True's
 ```
 
@@ -38,7 +38,6 @@ Our data can now be summarised as:
 | Distinct at-risk aircraft | 87 |
 | Days with at least one at-risk flight | **9 of 24** |
 
-As seen above, there is a much higher amount of observations of "at-risk" flights here compared to Entry 7 which reported 0.41%.
 
 ## At-Risk Observations Across the 24 Days
 Our first plot shows the amount of at-risk observations across the 24-days. 
@@ -50,10 +49,10 @@ Our first plot shows the amount of at-risk observations across the 24-days.
 
 What's interesting to observe is that there are lots of days where at-risk observations are little to zero, and there are several days with notable "spikes". The most prominent example is April 22, which accounts for 43% of all observations from our dataset.
 
-The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. 
+The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. It would be interesting to look into other factors that may have caused this, such humidity and temperatures that day.
 
 
-## At What Height Did Airplanes Get Caught in Contrail-Laden Air?
+## At What Height Did Airplanes Get Caught in Contrail-Forming Air?
 The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. There is a noticeable peak at around FL370, which is standard narrowbody cruise altitude. This is some food for thought, as it may pose a challenge for any altitude avoidance strategies.
 
 

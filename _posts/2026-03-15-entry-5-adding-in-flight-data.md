@@ -1,13 +1,13 @@
 ---
 preview_image: entry_5_overlay.png
-excerpt: Overlaying real ADS-B flight traffic data on contrail risk maps — where do Australia's busiest corridors actually intersect with high contrail forcing index?
+description: Overlaying real ADS-B flight traffic data on contrail risk maps to find where Australia's busiest corridors intersect with high contrail forcing index values.
 ---
 
 ## Entry 5: Adding in Flight Data
 
 In previous posts, we looked purely at contrail formation index based on altitude and coordinates. In this post, we're going to add a flight traffic layer to move from "where do contrails form" to "where do contrails form where there is also high air traffic?".
 
-The data we need to find this out is ADS-B data, which provides insights into flight traffic. To get ADS-B data, I created an account on OpenSky. However, a standard account restricts queries to the last hour and I need researcher access to match the May-Jul 2025 window that matches the Contrails data timeframe. For now, assuming that flight routes remain largely are stable year-round, I can use existing data to get some insights. Using this, I got four insightful plots.
+The data we need to find this out is ADS-B data, which provides insights into flight traffic. To get ADS-B data, I created an account on OpenSky. However, a standard account restricts queries to the last hour and I need researcher access to match the May-Jul 2025 window that matches the Contrails data timeframe. For now, assuming that flight routes remain largely stable year-round, I can use existing data to get some insights. Using this, I got four insightful plots.
 
 ### Plot 1: Overlay: Flight Corridors on Contrail Risk Background
 ![Flight Corridors Overlaid on Contrail Risk Map](/assets/images/entry_5_overlay.png)
@@ -23,9 +23,9 @@ This plot provides an indicator of prioritisation for avoidance effort. Each gri
 
 ![Contrail Exposure Index Map](/assets/images/entry_5_exposure.png)
 
-This presents some interesting results where the two (contrail formation and flight density might overlap). The peak cell was found at -36.25°S, 148.00°E with an exposure score of 0.123, which is Snowy Mountains / Monaro Tablelands and is a part of the Sydney-Melbourne route, which is the 6th most travelled route worldwide!
+This presents some interesting results where the two (contrail formation and flight density) might overlap. The peak cell was found at 36.25°S, 148.00°E with an exposure score of 0.123, which is Snowy Mountains / Monaro Tablelands and is a part of the Sydney-Melbourne route, which is the 6th most travelled route worldwide<sup><a href="#ref1">1</a></sup>!
 
-Another cell of interest is −41.00°S, 146.50°E which is over the Bass Strait (flights to and from Tasmania). Its atmospheric risk is around ~3× higher than the NSW tablelands cells but fewer aircraft transit it. Northern Territory is completely blank here. Anecdotally many aircraft pass the NT on overseas flights - perhaps it is a lapse in ADS-B data.
+Another cell of interest is 41.00°S, 146.50°E which is over the Bass Strait (flights to and from Tasmania). Its atmospheric risk is around ~3× higher than the NSW tablelands cells but fewer aircraft transit it. Northern Territory is completely blank here. Anecdotally many aircraft pass the NT on overseas flights - perhaps it is a lapse in ADS-B data.
 
 
 ### Plot 3: Altitude Alignment: Are Planes at the Riskiest Flight Levels?
@@ -50,5 +50,10 @@ For the most part, there is little overlap seen here between air traffic and con
 
 At the same time, it is important to note that the data used captures a small snapshot of time and the ADSB data is even more limited, not accounting for areas such as the NT, which may potentially yield interesting results. In addition to the Bass Strait, I want to repeat the same analysis for other time periods and use more extensive data to get more insights.
 
+---
 
+### References
 
+<div class="references">
+  <p><a name="ref1">[1]</a> Colin Weir (2026). <a href="https://moroku.com/wp-content/uploads/2026/03/HSR_Submission-Colin-Weir.pdf">High Speed Rail submission.</a></p>
+</div>

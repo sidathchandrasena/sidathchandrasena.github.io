@@ -1,6 +1,6 @@
 ---
 preview_image: entry_3_hotspot_mean.png
-excerpt: Migrating to PostgreSQL for a 60-day Australian dataset, then mapping contrail hotspots geospatially — where contrails form most frequently and intensely across the continent.
+description: Migrating to PostgreSQL for a 60-day Australian dataset and mapping contrail hotspots geospatially to find where contrails form most frequently and intensely across the continent.
 ---
 
 ## Entry 2: Migrating Databases + Starting Geospatial Analysis
@@ -21,7 +21,7 @@ Since migrating the database to Postgres, here is a summary of it now. As you ca
 | **Longitude**     | 110° to 155° · 181 values · 0.25° steps                                |
 | **Coverage**      | Australia only — no global data                                        |
 | **Flight levels** | FL270 to FL440 · 18 levels · FL10 steps                                |
-| **Grid completeness** | 141 × 181 × 18 × 239 = fully consistent, no missing cells 
+| **Grid completeness** | 141 × 181 × 18 × 239 = fully consistent, no missing cells |
 
 Looks ready for some more analysis!
 
@@ -29,13 +29,13 @@ Looks ready for some more analysis!
 ## Analysis
 Now we have around 2 month's worth of data, we can look into contrail formation in Australia during the winter period.
 
-From an initial look at the dataset, it was found that **97.1%** of `contrails` values were found to be zero. It is important to note here that the `contrails` variable is an output from the Google Contrails API that is not measured data, but rather an index that comes from a combination of satellite observations, ML model's output and CoCiP (Contrail Cirrus Prediction) ([source](https://developers.google.com/contrails/v1/forecast-description)). So this may reflect the model's limitations in data-sparse regions rather than the actual atmospheric conditions.
+From an initial look at the dataset, it was found that **97.1%** of `contrails` values were found to be zero. It is important to note here that the `contrails` variable is an output from the Google Contrails API that is not measured data, but rather an index that comes from a combination of satellite observations, ML model's output, ECMWF HRES forecast data and CoCiP (Contrail Cirrus Prediction)<sup><a href="#ref1">1</a></sup>. So this may reflect the model's limitations in data-sparse regions rather than the actual atmospheric conditions.
 
 To get more meaningful results from the data, two variables were created to quantify the frequency and intensity of contrails.
 
 **Mean contrail forcing index:**  Filters to rows where `contrails` > 0 then averaging within groups. Answers question of: how intense are contrails when they form?
 
-**Contrail Frequency:** A binary flag per timestamp which returns 1 if `contrails` > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of the time do contrails form here at all?"
+**Contrail Frequency:** A binary flag per timestamp which returns 1 if `contrails` > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of the time do contrails form here at all?
 
 These 2 variables were then represented spatially using GeoPandas, shapefiles of Australia and coordinates of major cities using the longitudes & latitudes, resulting in these plots:
 
@@ -59,18 +59,12 @@ Between FL270-FL440, notable altitudes for contrail frequency and intensity appe
 ### Plot 4: Hotspot Maps by Flight Level Band
 ![Hotspot Maps by Flight Level Band](/assets/images/entry_3_band_maps.png)
 
-The above is probably the most interesting plot in my opinion! It reveals that the hotspot locations are altitude dependent, with higher likelihood for contrail formation near Antarctica at a mid-cruise altitude (34-39,000 ft) while higher concentrations near Darwin and Northern Queensland are at an upper cruising altitude between 40-44,000 ft. This is super insightful!
+The above is probably the most interesting plot in my opinion! It reveals that the hotspot locations are altitude dependent, with higher likelihood for contrail formation over the Southern Ocean south of the mainland at a mid-cruise altitude (34-39,000 ft) while higher concentrations near Darwin and Northern Queensland are at an upper cruising altitude between 40-44,000 ft. This is super insightful!
 
+---
 
+### References
 
-
-
-
-
-
-
-
-
-
-
-
+<div class="references">
+  <p><a name="ref1">[1]</a> Google for Developers. <a href="https://developers.google.com/contrails/v1/forecast-description">Contrails API: forecast description.</a></p>
+</div>

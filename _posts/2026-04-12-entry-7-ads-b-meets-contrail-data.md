@@ -1,6 +1,6 @@
 ---
 preview_image: entry_7_geographic_risk.png
-excerpt: Comparing the contrail risk data to the ADS-B data for autumn 2026.
+description: This time, contrail data is matched with ADS-B flight traffic data covering the same window in Autumn 2026 to see where busy skies and contrail-prone areas overlap.
 ---
 
 ## Entry 7: When Real Flights Meet Contrail Skies
@@ -13,7 +13,7 @@ In this post, both datasets cover the same eight-day window of **3-11 April 2026
 ### Datasets
 #### Dataset A: `contrail_grids`
 
-This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a CFI value between 0 and 1. My dataset only retains squares with a value greater than 0.001. 
+This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a continuous CFI float value between 0 and 4. My dataset only retains squares with a value greater than 0.001. 
 
 The dataset is in autumn 2026, and a lot smaller in size compared to previous datasets during the winter 2025 timeframe. Ice supersaturated regions are a primary catalyst for contrails and winter in Australia experiences a greater frequency of ice supersaturation than autumn.
 
@@ -21,15 +21,15 @@ To summarise Dataset A:
 
 | Attribute | Value |
 |---|---|
-| **Source** | Google Contrails API (ERA5-based forecast) |
+| **Source** | Google Contrails API |
 | **Period** | 3–11 April 2026 |
 | **Temporal resolution** | 6-hour intervals (00:00, 06:00, 12:00, 18:00 UTC) |
 | **Spatial resolution** | 0.25° × 0.25° grid (≈28 km at Australian latitudes) |
 | **Altitude range** | FL270–FL440 (18 levels) |
-| **Total rows stored** | 234,817 cells (CFI > 0.1) across 36 snapshots |
+| **Total rows stored** | 234,817 cells (CFI > 0.001) across 36 snapshots |
 
 
-The figure below shows how each bar represents one 6-hour ERA5 snapshot.  
+The figure below shows how each bar represents one 6-hourly forecast snapshot.  
 
 <figure>
   <img src="/assets/images/entry_7_dataset_a_overview.png" alt="Dataset A overview">
@@ -88,7 +88,7 @@ The below plot combines 8 days worth of data into one single 24-hour UTC clock t
 
 The blue line (left axis) shows the average number of aircraft in the sky at each UTC hour. This shows a low at AEST night and a high across the daytime domestic period (peaking around UTC 0:00, which is ~10:00 AEST).
 
-The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at UTC 15:00 (01:00 AEST), so the middle of Australian overnight and has a low at UTC 01:00-02:00 (10:30 AEST).
+The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at 15 UTC (01:00 AEST), so the middle of Australian overnight with a low at 01-02 UTC (10:30 AEST).
 
 The key finding here is that the hours with the most air traffic (UTC 22:00-02:00, morning to midday AEST) are not the most prone to contrail exposure, but rather the quieter overnight window.
 
