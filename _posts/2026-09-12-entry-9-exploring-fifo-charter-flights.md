@@ -19,9 +19,9 @@ Growing up in South Australia, I was familiar with the term FIFO meaning "fly-in
 
 Some preliminary research reveals that FIFO work takes place primarily in QLD and WA as these states have a lot of mining sites and involves specialists coming into the site to do work over a rostered period. Some of the roles include engineers, electricians, security guards, nurses, chefs, etc<sup><a href="#ref1">1</a></sup>. 
 
-I was curious why people would choose to repeatedly commute instead of relocating, which could provide a lot of opportunities for the area near the mining site. An article by Windle and Rolfe<sup><a href="#ref3">3</a></sup> revealed that salaries would need to be increased significantly for someone to relocate instead of FIFO work. It seems that the Australian mining industry is very reliant on this kind of work.
+I was curious why people would choose to repeatedly commute instead of relocating, which could provide a lot of opportunities for the area near the mining site. An article by Windle and Rolfe<sup><a href="#ref2">2</a></sup> revealed that salaries would need to be increased significantly for someone to relocate instead of FIFO work. It seems that the Australian mining industry is very reliant on this kind of work.
 
-From one article<sup><a href="#ref2">2</a></sup>, I found some examples of the typical rosters FIFO workers take on:
+From one article<sup><a href="#ref3">3</a></sup>, I found some examples of the typical rosters FIFO workers take on:
 *  8/6 (work eight days, have six days off)
 *  2/1 (works two weeks, one week off)
 *  4/2 (work four weeks, then two weeks off)
@@ -68,7 +68,7 @@ I also wanted to see whether the above mentioned rosters may be reflected when p
 
 Very interesting. Here we can see that FIFO flights consistently make a higher proportion of air traffic in Australian airspace Tues-Thurs, and then at the end of the week (Fri-Sun), commercial flights make up a much higher proportion.
 
-Looking at information online on FIFO flights and which days on the week they are: one website<sup><a href="#ref6">6</a></sup> mentions how you fly out at the beginning of the week, Sunday or Monday and return in two weeks or so repeatedly - on a 2:1 schedule. There may be other factors that contribute to the above plot's shape, such as whether workers fly in their own time or in company time, as this would factor into things such as penalty rates on weekends.
+Looking at information online on FIFO flights and which days on the week they are: one website<sup><a href="#ref6">6</a></sup> mentions how you fly out at the beginning of the week (which appears to mean Monday or Tuesday) and return in two weeks or so repeatedly on a 2:1 schedule. There may be other factors that contribute to the above plot's shape, such as whether workers fly in their own time or in company time, as this would factor into things such as penalty rates on weekends.
 
 <br>
 
@@ -85,9 +85,9 @@ Learning about FIFO work from an aviation point of view was intriguing and I see
 
 <div class="references">
   <p><a name="ref1">[1]</a> <a href="https://www.bravusmining.com.au/what-is-fifo-work-in-australia/">FIFO work — Bravus Mining</a></p>
-  <p><a name="ref2">[2]</a> Tim D Smithies, Grace E Vincent, Sally A Ferguson, Gemma Maisey, Holly Fraser, Ian C Dunican, <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry</a>, Annals of Work Exposures and Health, Volume 70, Issue 2, March 2026, wxag007</p>
-  <p><a name="ref3">[3]</a> Windle, J., & Rolfe, J. (2013). Using discrete choice experiments to assess the preferences of new mining workforce to commute or relocate to the Surat Basin in Australia. Resources policy, 38(2), 169-180.</p>
-  <p><a name="ref4">[4]</a> Qantas Group. https://www.qantas.com/en-au/where-we-fly/network-aviation </p>
-  <p><a name="ref5">[5]</a> Maisey, G., Cattani, M., Devine, A., Lo, J., Fu, S. C., & Dunican, I. C. (2022). Digging for data: How sleep is losing out to roster design, sleep disorders, and lifestyle factors. Applied Ergonomics, 99, 103617. </p>
-  <p><a name="ref6">[6]</a> Programmed by Persol. Working FIFO in Australia: Pay, Rosters, Lifestyle and What to Expect. https://skilled.programmed.com.au/working-fifo-australia-pay-rosters-lifestyle-what-to-expect/ </p>
+  <p><a name="ref2">[2]</a> Windle, J., & Rolfe, J. (2013). <a href="https://doi.org/10.1016/j.resourpol.2012.10.006">Using discrete choice experiments to assess the preferences of new mining workforce to commute or relocate to the Surat Basin in Australia.</a> <em>Resources Policy</em>, 38(2), 169–180.</p>
+  <p><a name="ref3">[3]</a> Tim D Smithies, Grace E Vincent, Sally A Ferguson, Gemma Maisey, Holly Fraser, Ian C Dunican, <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry</a>, Annals of Work Exposures and Health, Volume 70, Issue 2, March 2026, wxag007</p>
+  <p><a name="ref4">[4]</a> Qantas Group. <a href="https://www.qantas.com/en-au/where-we-fly/network-aviation">Network Aviation.</a></p>
+  <p><a name="ref5">[5]</a> Maisey, G., Cattani, M., Devine, A., Lo, J., Fu, S. C., & Dunican, I. C. (2022). <a href="https://doi.org/10.1016/j.apergo.2021.103617">Digging for data: How sleep is losing out to roster design, sleep disorders, and lifestyle factors.</a> <em>Applied Ergonomics</em>, 99, 103617.</p>
+  <p><a name="ref6">[6]</a> Programmed by Persol. <a href="https://skilled.programmed.com.au/working-fifo-australia-pay-rosters-lifestyle-what-to-expect/">Working FIFO in Australia: Pay, Rosters, Lifestyle and What to Expect.</a></p>
 </div>

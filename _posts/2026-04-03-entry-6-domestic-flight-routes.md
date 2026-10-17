@@ -20,7 +20,7 @@ In Entry 5, we found from some limited OpenSky data that flights were observed t
 
 **Transparent Sheet:** Used 28km squares over a map of Australia and coloured each square by how often the atmosphere at cruising altitude (FL320-400) contains the conditions for contrails to form and persist. Dark squares indicate where the atmosphere is prone to contrail formation.
 
-**Great Circle Paths:** on a globe, the shortest path between two points is a slight curve known as a "great circle". For short routes that curve is almost identical to a straight line on a flat map, while for longer routes it arcs more noticeable. We go along each great circle and record which grid squares it passes through - only the portion where the aircraft would be at cruising altitude at around FL320-FL400.
+**Great Circle Paths:** on a globe, the shortest path between two points is a slight curve known as a "great circle". For short routes that curve is almost identical to a straight line on a flat map, while for longer routes it arcs more noticeable. I go along each great circle and record which grid squares it passes through, treating the whole route as if it were at cruise, which may overstate the exposure at airports where planes would be climbing or descending.
 
 **The BITRE dataset:** Contains monthly domestic aviation statistics with every city pair in Australia. We downloaded all 12 months of 2024 and added them up to get annual flight counts. For each route, multiplied contrail risk along the great circle path by the annual flight count resulting in a total annual exposure score that indicates how contrail-forming the route's geography is with its flying frequency.
 
@@ -30,7 +30,7 @@ In summary, our dataset looks like this:
 |---|---|
 | **Contrail risk grid** | Uses 2 models: ML-based model and Contrail Cirrus Prediction (CoCiP), FL320–FL400, May–July 2025, 239 timestamps, 25,521 grid cells at 0.25° resolution |
 | **Flight traffic** | BITRE monthly domestic aviation statistics, all 12 months of 2024, 62 city pairs with known airport coordinates |
-| **Path model** | Great circle arcs sampled at 150 points; cruise portion only (within Australian bounding box) |
+| **Path model** | Great circle arcs sampled at 150 points; assumes all points to be at cruise altitude (within Australian bounding box) |
 
 Note there are some limitations. First, great circle paths are not exact. Second, BITRE provides a seats-per-flights figure which we can assume aircraft size. For flights with low passenger size, they are likely to be operated by turboprops which have a much lower cruising altitude. This causes the exposure score to overstate actual contrail risk, which is important to keep in mind.
 
@@ -68,7 +68,7 @@ Plot 1 shows a strong correlation between annual flight count and total exposure
 
 In Plot 2, as mentioned earlier, routes with few seats (<70) tend to be turboprop planes which results in some scattered results because they actually fly at much lower altitudes below the risk window. The highest per-flight scorers all have 100+ seats, which indicates that they are jet-operated routes. Routes like DPO-MEL score high in exposure but have low seat numbers per flight (turboprop) so the high score reflects Bass Strait geography rather than a real contrail exposure.
 
-Plot 3 shows a positive trend between route distance and per-flight risk. Longer routes will cover more cells and accumulate more risk, but geography matters more than distance and this is not proportional. For example, routes to Perth are long but have a moderate per-flight risk as their track crosses low-risk, arid interior while Tasmanian routes are shorter but score high because every km of their cruise phase is over the Bass Strait risk corridor.
+Plot 3 shows a weak positive trend between route distance and per-flight risk. The per-flight risk score is calculated by averaging the risk of squares a route crosses, so the distance of the route doesn't cause risk to increase, what matters more is the skies the route passes through. For example, routes to Perth are long but have a moderate per-flight risk as their track crosses the low-risk, arid interior while Tasmanian routes are shorter but score high because every km of their cruise phase is over the Bass Strait risk corridor.
 
 
 ## Main Takeaways

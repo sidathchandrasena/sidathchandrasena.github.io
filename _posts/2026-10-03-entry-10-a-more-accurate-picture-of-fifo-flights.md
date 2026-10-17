@@ -5,7 +5,7 @@ description: Improving the filtered ADS-B dataset to classify Australian flights
 
 ## Entry 10: A More Accurate Picture of FIFO Flights
 
-Last entry provided a glimpse into how Australia's mining industry plays a big role in our aviation industry. I also found [this graphic](https://www.reddit.com/r/perth/comments/14vnz06/air_traffic_around_australia_eight_hours/) which shows a pretty cool visualisation of how FIFO flights look in the grand scale of things.
+Last entry provided a glimpse into how Australia's mining industry plays a big role in our aviation industry. I also found this graphic<sup><a href="#ref1">1</a></sup> which shows a pretty cool visualisation of how FIFO flights look in the grand scale of things.
 
 In my last analysis, I used some big assumptions to label flights as FIFO vs non-FIFO based on carrier. However, since then, I have come to see that this is not a great way to estimate if a flight is a FIFO service or not. While I don't plan to do anything particularly as complex as creating a model, I want to use this entry to get a more accurate depiction of FIFO scheduling and then hopefully use this dataset in my next entry with my Contrails data, which has continued to grow with my cron job.
 
@@ -29,7 +29,7 @@ df_wa = gdf[gdf.within(wa)]
 
 I initially thought of using the registration number of the plane to filter data, but noticed that this can be inconsistent with the operating airline (e.g. if an airline sells the plane to another company). I also realised that callsign is not a great way to distinguish a carrier, as this seems to conflate airlines with its subsidiaries (e.g. Qantas + Network Aviation + QantasLink).
 
-I decided to filter using icao24 which are 24-bit addresses using Australia's hex range, which is 7C0000–7FFFFF<sup><a href="#ref1">1</a></sup>. I also made sure to keep the earliest entry for that aircraft to remove duplicate entries.
+I decided to filter using icao24 which are 24-bit addresses using Australia's hex range, which is 7C0000–7FFFFF<sup><a href="#ref2">2</a></sup>. I also made sure to keep the earliest entry for that aircraft to remove duplicate entries.
 
 I then merged this with OpenSky data on the icao24 column which gave me information such as: operator, owner, and aircraft. 
 
@@ -48,15 +48,15 @@ After some confusion with operator codes, I decided that for the scope of this t
 #### Flight Number Rules
 On major airlines:
 
-**Virgin Australia:** Flights VA9000 to VA9999 are operated by Virgin Australia Regional Airlines and are listed as charter services<sup><a href="#ref2">2</a></sup> which I will take to be FIFO services for this exercise.
+**Virgin Australia:** Flights VA9000 to VA9999 are operated by Virgin Australia Regional Airlines and are listed as charter services<sup><a href="#ref3">3</a></sup> which I will take to be FIFO services for this exercise.
 
-**Qantas:** QF1600–QF1999 are FIFO services<sup><a href="#ref3">3</a></sup> and QF2700–2735, QF2770–2775 and QF6590–6599 are all Network Aviation flight numbers<sup><a href="#ref4">4</a></sup>, which can be considered as FIFO here.
+**Qantas:** QF1600–QF1999 are FIFO services<sup><a href="#ref4">4</a></sup> and QF2700–2735, QF2770–2775 and QF6590–6599 are all Network Aviation flight numbers<sup><a href="#ref5">5</a></sup>, which can be considered as FIFO here.
 
 **Jetstar:** All flights can be labeled non-FIFO as it is a LCC carrier
 
 **Alliance Airlines:** Could not find a clear designation of flight number being FIFO or not. Considering it's described as Australia's major FIFO operator, I am going to label all as FIFO despite it being a simplification.
 
-**Rex (Regional Express):** all FIFO flights are operated via National Jet Express, so all ZL/RXA flights can be labeled as non-FIFO<sup><a href="#ref5">5</a></sup>.
+**Rex (Regional Express):** all FIFO flights are operated via National Jet Express, so all ZL/RXA flights can be labeled as non-FIFO<sup><a href="#ref6">6</a></sup>.
 
 <br>
 #### Origin/Destination Filtering
@@ -66,7 +66,11 @@ I located the airports of several confirmed mine sites using the ICAO codes: "YC
 
 <br>
 <br>
-After doing both of these filtering actions, I got the following using pandas crosstab. There are definitely a lot of limitations in the dataset, but let's see if there's an improvement to the plots:
+After doing both of these filtering actions, I got the following using pandas crosstab. 
+
+Note that the "unknown" label was applied when the standingdata merge did not result in a match for the callsign so the origin or destination of a flight could not be determined, nor could the FIFO status be later determined from the flight number. "Unlabeled" is used when there was a flight number with a matching origin/destination but none of the flight number airline-specific rules were applied to them. I couldn't determine a flight number rule for Network Aviation to classify as FIFO/non-FIFO, which is a weakness as most flights are likely to be FIFO but outside of my mine-site airport list. "none" represents cases where the flight callsign failed to match with an airline in my list from Wikipedia of Australian airlines, which are mostly small Australian-registered aircraft which are private, business and small charter flights.
+
+There are definitely a lot of limitations in the dataset, but let's see if there's an improvement to the plots:
 
 
 ```text
@@ -90,7 +94,7 @@ Next, I plotted my plots from Entry 9 with the newly filtered and more accurate 
 
 ![FIFO vs non-FIFO in WA by hour of day compared with Entry 9](/assets/images/entry_10_comparison_time_of_day.png)
 
-The effects are much more pronounced for FIFO flights, with a large majority of flights occurring early in the day or around 5pm. This is explained as the "morning wave", where workers arrive early to get to the site and work their 12-hour days by mid-morning<sup><a href="#ref6">6</a></sup>. The rise in the afternoon is explained by workers completing their shifts and returning to Perth where they commute home<sup><a href="#ref7">7</a></sup>. 
+The effects are much more pronounced for FIFO flights, with a large majority of flights occurring early in the day or around 5pm. This is explained as the "morning wave", where workers arrive early to get to the site and work their 12-hour days by mid-morning<sup><a href="#ref7">7</a></sup>. The rise in the afternoon is explained by workers completing their shifts and returning to Perth where they commute home<sup><a href="#ref8">8</a></sup>. 
 
 
 ![FIFO vs non-FIFO in WA by day of week compared with Entry 9](/assets/images/entry_10_comparison_day_of_week.png)
@@ -104,11 +108,12 @@ It is exciting to work with the data directly on Jupyter Notebooks using Pandas 
 <br>
 ### References
 <div class="references">
-  <p><a name="ref1">[1]</a> AirLabs. <a href="https://airlabs.co/icao-24-bit-address">ICAO 24-bit address.</a></p>
-  <p><a name="ref2">[2]</a> Hong Kong Airlines. <a href="https://www.hongkongairlines.com/en_CN/FFP/earn/airlines_partner-VA">Airline partner: Virgin Australia.</a></p>
-  <p><a name="ref3">[3]</a> Australian Frequent Flyer. <a href="https://www.australianfrequentflyer.com.au/qantas-flight-numbers/">Qantas flight numbers.</a></p>
-  <p><a name="ref4">[4]</a> Qantas Group. <a href="https://www.qantas.com/en-au/where-we-fly/network-aviation">Network Aviation.</a></p>
-  <p><a name="ref5">[5]</a> Wikipedia. <a href="https://en.wikipedia.org/wiki/National_Jet_Express">National Jet Express.</a></p>
-  <p><a name="ref6">[6]</a> Medical Xpress (2021). <a href="https://medicalxpress.com/news/2021-10-fly-in-fly-out-workers-significant-loss.html">Fly-in fly-out workers suffer significant loss of sleep.</a></p>
-  <p><a name="ref7">[7]</a> Smithies, T. D., Vincent, G. E., Ferguson, S. A., Maisey, G., Fraser, H., & Dunican, I. C. (2026). <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry.</a> <em>Annals of Work Exposures and Health, 70</em>(2), wxag007.</p>
+  <p><a name="ref1">[1]</a> r/perth (Reddit). <a href="https://www.reddit.com/r/perth/comments/14vnz06/air_traffic_around_australia_eight_hours/">Air traffic around Australia, eight hours.</a></p>
+  <p><a name="ref2">[2]</a> AirLabs. <a href="https://airlabs.co/icao-24-bit-address">ICAO 24-bit address.</a></p>
+  <p><a name="ref3">[3]</a> Hong Kong Airlines. <a href="https://www.hongkongairlines.com/en_CN/FFP/earn/airlines_partner-VA">Airline partner: Virgin Australia.</a></p>
+  <p><a name="ref4">[4]</a> Australian Frequent Flyer. <a href="https://www.australianfrequentflyer.com.au/qantas-flight-numbers/">Qantas flight numbers.</a></p>
+  <p><a name="ref5">[5]</a> Qantas Group. <a href="https://www.qantas.com/en-au/where-we-fly/network-aviation">Network Aviation.</a></p>
+  <p><a name="ref6">[6]</a> Wikipedia. <a href="https://en.wikipedia.org/wiki/National_Jet_Express">National Jet Express.</a></p>
+  <p><a name="ref7">[7]</a> Maisey, G., Cattani, M., Devine, A., Lo, J., Fu, S. C., & Dunican, I. C. (2022). <a href="https://doi.org/10.1016/j.apergo.2021.103617">Digging for data: How sleep is losing out to roster design, sleep disorders, and lifestyle factors.</a> <em>Applied Ergonomics</em>, 99, 103617.</p>
+  <p><a name="ref8">[8]</a> Smithies, T. D., Vincent, G. E., Ferguson, S. A., Maisey, G., Fraser, H., & Dunican, I. C. (2026). <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry.</a> <em>Annals of Work Exposures and Health, 70</em>(2), wxag007.</p>
 </div>

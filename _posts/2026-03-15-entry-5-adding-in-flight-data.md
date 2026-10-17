@@ -41,7 +41,7 @@ on_ground == False and FL ≥ 200. There is nothing that identifies a climb or d
 
 An observation that can be made from above is that around 93.6% of flights are observed at FL320-FL400. Even though the data is limited to 20 snapshots observed on one morning in March, aircrafts cruise at certain altitudes by design, so our observations here can provide some useful indication of cruising altitude for further research while we wait for more ADSB data.
 
-In earlier posts, we observed that FL340-FL390 is where contrail risk peaks for mid-latitudes. The above right plot shows that commercial flights observed concentrate in the FL340-390 band, which has some overlap. This is significant because it relates to the potential need for changes to altitude as mentioned on Google.
+In earlier posts, we observed that FL340-FL360 is where contrail risk peaks for mid-latitudes. The above right plot shows that commercial flights observed concentrate in the FL340-390 band, which has some overlap. This is significant because it relates to the potential need for changes to altitude as mentioned on Google.
 
 
 ### Main Takeaway
@@ -55,5 +55,5 @@ At the same time, it is important to note that the data used captures a small sn
 ### References
 
 <div class="references">
-  <p><a name="ref1">[1]</a> Colin Weir (2026). <a href="https://moroku.com/wp-content/uploads/2026/03/HSR_Submission-Colin-Weir.pdf">High Speed Rail submission.</a></p>
+  <p><a name="ref1">[1]</a> OAG (2025). <a href="https://www.oag.com/busiest-routes-world-2025">Busiest Routes in the World 2025.</a></p>
 </div>

@@ -15,7 +15,7 @@ In this post, both datasets cover the same eight-day window of **3-11 April 2026
 
 This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a continuous CFI float value between 0 and 4. My dataset only retains squares with a value greater than 0.001. 
 
-The dataset is in autumn 2026, and a lot smaller in size compared to previous datasets during the winter 2025 timeframe. Ice supersaturated regions are a primary catalyst for contrails and winter in Australia experiences a greater frequency of ice supersaturation than autumn.
+The dataset is in Autumn 2026, and a lot smaller in size compared to previous datasets during the Winter 2025 timeframe. The difference in results could be explained by the different climate conditions across seasons in the Southern Hemisphere, but the two datasets also cover different years and lengths of time, so they aren't exactly comparable.
 
 To summarise Dataset A:
 
@@ -64,7 +64,7 @@ The plot below illustrates Dataset B, air traffic over time in Australian skies.
 ### Let's combine both plots together.
 This way, we can investigate: how much of all the aircraft in Australian skies is exposed to contrail-risk regions at one time? Each snapshot captures how many aircraft were inside an active contrail risk cell at a point in time. The blue dashed-line shows the total aircraft in the sky at each poll and the red line shows how many of those aircraft were at risk. 
 
-For most of the 8-day window, the red and blue lines are far apart. The only exception is on 5-6th of April, where the blue line stays on its steady daily rhythm while the red line is noticeably higher, indicating that something occurred here that was atmosphere-driven. To better understand what caused this, we would need to look at weather data.
+For most of the 8-day window, the red and blue lines are far apart with only few aircraft (around 0-3) inside a contrail risk cell compared to up to 140 aircraft in the sky. So exposure was a small fraction of traffic throughout with no clear spike on any specific day.
 
 ![Fleet exposure over time](/assets/images/entry_7_exposure_timeseries.png)
 
@@ -88,7 +88,7 @@ The below plot combines 8 days worth of data into one single 24-hour UTC clock t
 
 The blue line (left axis) shows the average number of aircraft in the sky at each UTC hour. This shows a low at AEST night and a high across the daytime domestic period (peaking around UTC 0:00, which is ~10:00 AEST).
 
-The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at 15 UTC (01:00 AEST), so the middle of Australian overnight with a low at 01-02 UTC (10:30 AEST).
+The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at 15 UTC (01:00 AEST), so the middle of Australian overnight with a low at 01-02 UTC (11:00-12:00 AEST). This matches what was observed earlier in Entry 3.
 
 The key finding here is that the hours with the most air traffic (UTC 22:00-02:00, morning to midday AEST) are not the most prone to contrail exposure, but rather the quieter overnight window.
 
@@ -101,9 +101,7 @@ The key finding here is that the hours with the most air traffic (UTC 22:00-02:0
 * The overnight window is when the highest risk of contrail formation occurs rather than the hours when there is the most air traffic.
   
 **Food for thought for the next entry:** 
-
-* What caused that increase in flights at-risk of contrail formation in Plot C? 
-  
+ 
 * How does this dataset from April compare to other months? 
 
 * What weather data can we use to understand the changes in at-risk aircraft? 

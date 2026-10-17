@@ -14,7 +14,7 @@ I then modified the code to import a week's worth of data into a simple, local S
 Then I generated some plots from the data to get some first glimpses into what the data looks like.
 
 ### Average Contrail Forcing Index (CFI) by Hour of Day
-With only four times of the day across 6-hour intervals, it is difficult to make any strong observations. But something that can be noticed below is that contrail forcing index peaks at around 14 UTC which is around midnight AEST. It seems to be lowest at 2 UTC or 12:00 PM noon AEST.
+With only four times of the day across 6-hour intervals, it is difficult to make any strong observations. But something that can be noticed below is that contrail forcing index peaks at around 14 UTC which is between 12am Australian Eastern Standard Time (AEST). It seems to be lowest at 2 UTC or 12:00 PM noon AEST.
 
 ![Average Contrail Forcing Index by Hour of Day](/assets/images/entry_1a_hourly.png)
 

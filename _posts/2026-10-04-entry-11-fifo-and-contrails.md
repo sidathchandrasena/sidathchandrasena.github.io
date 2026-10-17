@@ -8,9 +8,7 @@ description: Bringing in the contrails dataset with the labeled FIFO vs non-FIFO
 Now that I was able to filter the ADS-B dataset to WA and label flights as FIFO and non-FIFO, it's time to join the dataset with the Google Contrails dataset. From this, I want to now see what percentage of flights that are in the "risk region" for contrail formation.
 
 #### Joining the Dataset
-The contrails dataset has coordinates that are rounded to 0.25, so the ADS-B data had to first be rounded so there could be a match. So this was done to the longitude and latitude columns. Flight level was also rounded to the nearest 10 to match the contrails dataset. This was also done for the timestamp column, which in the contrails table only records results for each multiple of 6 (UTC 00, 06, 12, 18), so each result is rounded to one of these four times to match.
-
-Next, the ADS-B data was filtered between FL270 and FL440 as this was the range of the contrails dataset, which is the altitude at which contrails are most likely to form.
+The contrails dataset has coordinates that are rounded to 0.25, so the ADS-B data had to first be rounded so there could be a match. So this was done to the longitude and latitude columns. Flight level was also rounded to the nearest 10 to match the contrails dataset. This was also done for the timestamp column, which in the contrails table only records results for each multiple of 6 (UTC 00, 06, 12, 18), so each result is rounded to one of these four times to match. The ADS-B data was then filtered between FL270 and FL440 as this was the altitude range the Contrails API covers.
 
 Next, the rounded timestamp column was filtered in the ADS-B dataset to make sure it matches the timestamps in the contrails dataset.
 
@@ -20,7 +18,7 @@ The `fillna()` command was run on `contrails` for rows where there was no match,
 
 Next, I created a new variable called `local_date` to convert the timestamp from UTC to Perth time.
 
-Next, I imported the FIFO dataset labeled from last entry and then performed an inner merge to get this merged table to have labeling. This left the resulting table with only Australian airlines and one sighting per labelled flight.
+Next, I imported the FIFO dataset labeled from last entry and then performed an inner merge to get this merged table to have labeling. This left the resulting table with only Australian airlines, with the FIFO/non-FIFO label attached to every sighting of each flight.
 
 <br>
 #### Visualising the Results
@@ -28,9 +26,10 @@ I first wanted to see how many of the flights in the dataset that pass through c
 
 ![Flights that passed through contrail-forming air FIFO vs non-FIFO](/assets/images/entry_11_contrail_distribution.png)
 
-The plot accounts for the different frequencies between non-FIFO and FIFO flights, with 2.1% of all flights passing through contrail-forming air being FIFO flights (n = 910) in comparison to 2.9% being non-FIFO flights (n = 1672). Considering non-FIFO flights make up almost double the frequency of FIFO flights, this result stands out. 
+The plot shows the split between non-FIFO and FIFO flights that passed through contrail-forming air (if any of its sightings over WA was in a cell with CFI > 0.001). 
 
-A major limitation, however, is that the merge with the FIFO dataset keeps only the first sighting for each flight. If the plane passed through a cell with a high CFI at another point in its trip, it would have been missed, so there is probably an undercount.
+This revealed 2.1% of FIFO flights (n = 910) passing through contrail-forming air compared to 2.9% of non-FIFO flights (n = 1672). Considering that 2.1% of 910 is around 19 flights and 2.9% of 1672 is around 48 flights, a two proportion z-test on Jupyter Notebooks using the math module gets a p-value of 0.23, which is not statistically significant and shows that the data doesn't provide enough evidence of a true difference between the two. So more data is needed to understand this gap.
+
 
 <br>
 
@@ -53,7 +52,7 @@ Now let's look at the aircraft distribution amongst FIFO and non-FIFO flights in
 
 What I find to be interesting here is the big difference in the number of observations between the top and bottom bar of FIFO and non-FIFO, despite being the same aircraft. Also the Boeing 737-MAX at second from top, and then Boeing 737-800 below, is that to do with the increased adoption of MAX aircraft in domestic Australia? 
 
-Perhaps this should be taken with some skepticism, however, as the right-hand plot demonstrates that when the data is filtered to within one hour of the observation, it seems that the diversity in aircraft type is significantly reduced.
+Perhaps this should be taken with some skepticism, however, as the right-hand plot demonstrates that when the data is filtered to within one hour of the observation, it seems that the diversity in aircraft type is significantly reduced, with n = 6136 reduced to n = 2259 meaning that 37% of points were kept.
 
 <br>
 #### Concluding Remarks

@@ -47,7 +47,7 @@ In addition to altitudes, we can also look at how the time of day may change the
 ![Overall Diurnal Contrail Signal](/assets/images/entry_4_diurnal_overall.png)
 
 
-As we can see above, there are noticeable differences in the bar plots so conditions are not uniform in time, with contrail forcing index highest at around 14 UTC, which is around 10am-12pm AEST.
+As we can see above, there are noticeable differences in the bar plots so conditions are not uniform in time, with contrail forcing index highest at around 14 UTC, which is around 00:00 AEST (midnight).
 
 <br>
 ### Plot 4: Diurnal Signal by Latitude Band
@@ -60,15 +60,15 @@ Both plots reveal 14 UTC (midnight AEST) to be the peak, with the Southern Ocean
 ### The main takeaway
 From what we have, we observed that contrail formation conditions are the highest overnight and lowest around midday. How does this compare to what is mentioned online?
 
-It is found that the season with the highest amount of contrails is winter, which is when this dataset was recorded.<sup><a href="#ref1">1</a></sup> Early morning flights tend to create "cooling contrails" as some of the incoming sunlight is reflected back into space<sup><a href="#ref2">2</a></sup> while late night flights create contrails with the highest warming contribution.<sup><a href="#ref1">1</a></sup> This demonstrates how contrail formation conditions do not necessarily equate to high amounts of warming.
+It was found that the season with the highest amount of contrails is winter in a study taken in the Northern Hemisphere<sup><a href="#ref1">1</a></sup>, which is when this dataset was recorded. Early morning flights tend to create "cooling contrails", while evening and night flights produce contrails with the highest warming contribution.<sup><a href="#ref2">2</a></sup> This demonstrates how contrail formation conditions do not necessarily equate to high amounts of warming.
 
 ---
 
 ### References
 
 <div class="references">
-  <p><a name="ref1">[1]</a> Transport & Environment — <a href="https://www.transportenvironment.org/articles/contrail-avoidance">Contrail Avoidance</a></p>
-  <p><a name="ref2">[2]</a> Carbon Direct — <a href="https://www.carbon-direct.com/insights/contrails-major-climate-impact-major-opportunity">Contrails: Major Climate Impact, Major Opportunity</a></p>
+  <p><a name="ref1">[1]</a> Stuber, N., Forster, P., Rädel, G., et al. (2006). <a href="https://doi.org/10.1038/nature04877">The importance of the diurnal and annual cycle of air traffic for contrail radiative forcing.</a> <em>Nature</em>, 441, 864–867.</p>
+  <p><a name="ref2">[2]</a> Transport & Environment — <a href="https://www.transportenvironment.org/articles/contrail-avoidance">Contrail Avoidance</a></p>
 </div>
 
 
