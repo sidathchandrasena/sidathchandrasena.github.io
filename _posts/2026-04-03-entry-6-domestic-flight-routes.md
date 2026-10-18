@@ -11,16 +11,16 @@ OpenSky's free tier ran out of credits quite fast, so I decided to use a Github 
 
 ----
 
-In Australia, BITRE (Bureau of Infrastructure, Transport and Regional Economics) provides a free, downloadable dataset of monthly domestic aviation statistics with the total number of flights and seats for that month. In today's post, I plan to look at domestic flight routes, particularly the busiest ones, and evaluate them with the contrail risk data we have. 
+In Australia, BITRE (Bureau of Infrastructure, Transport and Regional Economics) provides a free, downloadable dataset of monthly domestic aviation statistics with the total number of flights and seats for that month. In today's post, I plan to look at domestic flight routes, particularly the busiest ones, and evaluate them with the contrail risk data. 
 
-In Entry 5, we found from some limited OpenSky data that flights were observed to mostly be at FL320–FL400 in Australian skies. A quick search online at flight reports shows a cruising altitude from SYD-MEL ranging from FL330 to FL400.
+Entry 5 found from some limited OpenSky data that flights were observed to mostly be at FL320–FL400 in Australian skies. A quick search online at flight reports shows a cruising altitude from SYD-MEL ranging from FL330 to FL400.
 
 --------
 ### How this analysis was done
 
 **Transparent Sheet:** Used 28km squares over a map of Australia and coloured each square by how often the atmosphere at cruising altitude (FL320-400) contains the conditions for contrails to form and persist. Dark squares indicate where the atmosphere is prone to contrail formation.
 
-**Great Circle Paths:** on a globe, the shortest path between two points is a slight curve known as a "great circle". For short routes that curve is almost identical to a straight line on a flat map, while for longer routes it arcs more noticeable. I go along each great circle and record which grid squares it passes through, treating the whole route as if it were at cruise, which may overstate the exposure at airports where planes would be climbing or descending.
+**Great Circle Paths:** on a globe, the shortest path between two points is a slight curve known as a "great circle". For short routes that curve is almost identical to a straight line on a flat map, while for longer routes it arcs more noticeably. I go along each great circle and record which grid squares it passes through, treating the whole route as if it were at cruise, which may overstate the exposure at airports where planes would be climbing or descending.
 
 **The BITRE dataset:** Contains monthly domestic aviation statistics with every city pair in Australia. We downloaded all 12 months of 2024 and added them up to get annual flight counts. For each route, multiplied contrail risk along the great circle path by the annual flight count resulting in a total annual exposure score that indicates how contrail-forming the route's geography is with its flying frequency.
 
@@ -54,13 +54,13 @@ Left: top 15 routes by total annual exposure. Right: top 15 routes by exposure p
 
 ![Busy Routes vs Risky Zones](/assets/images/entry_6_exposure_comparison.png)
 
-The Melbourne to Sydney route is Australia's biggest contrail contributor overall with an exposure score of 1,337 and 55,624 flights in 2024. On the right plot however we can see that its per flight score puts it around 8th. So it's not necessarily a contrail-prone route, but given that it is one of the busiest domestic routes in the world, it accumulates more exposure than any other route.
+The Melbourne to Sydney route is Australia's biggest contrail contributor overall with an exposure score of 1,337 and 55,624 flights in 2024. On the right plot however it can be seen that its per flight score puts it around 8th. So it's not necessarily a contrail-prone route, but given that it is one of the busiest domestic routes in the world, it accumulates more exposure than any other route.
 
 Hobart to Melbourne is the most contrail-prone route per individual flight with a per-flight risk score of 0.0605, which is 2.5x higher than SYD-MEL's 0.024. Each HBA-MEL flight crosses the Bass Strait on a path that runs almost directly over the cluster of highest-risk cells seen in previous posts. It ranks 3rd in total exposure despite carrying only around a sixth of SYD-MEL's traffic.
 
 
 ### What Factors Determine Contrail Exposure?
-To look into this question, we made 3 scatter plots examining the roles of frequency, seats per flight (aircraft size) and route distance.
+To look into this question, 3 scatter plots were generated examining the roles of frequency, seats per flight (aircraft size) and route distance.
 
 ![Factors Driving Contrail Exposure](/assets/images/entry_6_factors.png)
 
@@ -77,5 +77,3 @@ While waiting on ADSB data to load, we were able to get some interesting informa
 With what we have, we can see examples of how contrail formation risk appears in different ways. In some cases, it is high-risk and low-traffic, and in other cases, it can be low-risk and high-traffic. 
 
 The ADS-B data, when loaded, will provide more supporting information. Particularly to answer questions such as whether the actual paths match the great circles, or if every flight on the same route hits the same risk cells? Some other considerations for future posts include looking at turboprop flights at lower altitudes, and looking at how data at other times in the year (seasonality) affects things.
-
-That's all for now, hope you enjoyed reading this!

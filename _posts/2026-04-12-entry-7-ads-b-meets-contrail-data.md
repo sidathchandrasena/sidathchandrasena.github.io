@@ -1,5 +1,5 @@
 ---
-preview_image: entry_7_geographic_risk.png
+preview_image: entry_7_geographic_risk_2.png
 description: This time, contrail data is matched with ADS-B flight traffic data covering the same window in Autumn 2026 to see where busy skies and contrail-prone areas overlap.
 ---
 
@@ -76,13 +76,13 @@ The heatmap placed over the map of Australia below shows the **Compound Risk Sco
 
 There are some notable clusters of purple - the Western Australia interior and Bass Strait. The Tasman Sea to the right also showed some intersection of contrail risk and flight traffic to a lesser extent than seen earlier in Entry 5.
 
-![Compound risk geography](/assets/images/entry_7_geographic_risk.png)
+![Compound risk geography](/assets/images/entry_7_geographic_risk_2.png)
 
 
 ----
 
 ### What time of day is contrail risk the highest?
-The below plot combines 8 days worth of data into one single 24-hour UTC clock that identifies at what time contrail exposure peaks.
+The below plot combines 8 days' worth of data into one single 24-hour UTC clock that identifies at what time contrail exposure peaks.
 
 ![Diurnal pattern](/assets/images/entry_7_diurnal.png)
 

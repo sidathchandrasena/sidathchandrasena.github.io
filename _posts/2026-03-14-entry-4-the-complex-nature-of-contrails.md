@@ -24,7 +24,7 @@ The article then talks about how recent studies have identified some limitations
 * Another study found that contrail warming was not 3x that of CO2, but rather 2/3rd, suggesting a smaller impact than previously perceived<sup><a href="#ref5">5</a></sup>
 
 ---
-To relate this back to my posts so far, in those spots such as the Southern Ocean where we found a high contrail forcing index, we should consider whether those contrails would form inside existing cloud cover, as this might cause the warming effect to be lower than the CFI values suggest.
+To relate this back to my posts so far, in those spots such as the Southern Ocean where a high contrail forcing index is found, we should consider whether those contrails would form inside existing cloud cover, as this might cause the warming effect to be lower than the CFI values suggest.
 
 My main takeaway from this article is understanding how complicated contrail formation is and how much more knowledge is needed to better understand their climate impacts, carefully balancing fuel usage and the warming impacts from each contrail region. What this means for me: it motivates me to keep analysing data in Australia, an underexplored region of the world, and share these findings.
 

@@ -40,17 +40,8 @@ I realised that several factors would need to be considered to determine whether
 
 For now, what I chose to do is to pick three airlines that do largely intercity routes (Qantas, Virgin Australia, Jetstar) and three carriers that largely operate FIFO services (Network Aviation, National Jet Express and Alliance Airlines).
 
-Below is a snippet of the resulting Pandas dataframe:
+The resulting dataframe contained columns including: `callsign`, `airline`, `latitude`, `longitude`, `flight_level`, `carrier_group`.
 
-```python
-df_au.head(2)
-```
-
-```
-   id  snapshot_id                       collected_at  icao24 callsign   latitude  longitude  baro_altitude_m  geo_altitude_m  flight_level  ...                    geometry callsign_prefix   airline iata icao callsign_wiki   category      hub_airports                          notes carrier_group
-0   1    1775190223  2026-04-03 04:23:43.885157+00:00  7c045e   JST985 -34.890297  146.40404         11277.60        11704.32        370.00  ...  POINT (146.40404 -34.8903)              JST  Jetstar   JQ  JST       JETSTAR  scheduled  Melbourne Airport  Low-cost subsidiary of Qantas       non_fifo
-1   2    1775190223  2026-04-03 04:23:43.885157+00:00  7c4a51   JST633 -35.001617  146.46642          9745.98        10142.22        319.75  ...  POINT (146.46642 -35.00162)             JST  Jetstar   JQ  JST       JETSTAR  scheduled  Melbourne Airport  Low-cost subsidiary of Qantas       non_fifo
-```
 
 <br>
 #### Plot 1: FIFO vs non-FIFO - Hour of Day 
@@ -66,9 +57,9 @@ I also wanted to see whether the above mentioned rosters may be reflected when p
 
 ![FIFO vs non-FIFO flight frequency by day of week](/assets/images/entry_9_fifo_day_of_week.png)
 
-Very interesting. Here we can see that FIFO flights consistently make a higher proportion of air traffic in Australian airspace Tues-Thurs, and then at the end of the week (Fri-Sun), commercial flights make up a much higher proportion.
+Here we can see that FIFO flights consistently make a higher proportion of air traffic in Australian airspace Tues-Thurs, and then at the end of the week (Fri-Sun), commercial flights make up a much higher proportion.
 
-Looking at information online on FIFO flights and which days on the week they are: one website<sup><a href="#ref6">6</a></sup> mentions how you fly out at the beginning of the week (which appears to mean Monday or Tuesday) and return in two weeks or so repeatedly on a 2:1 schedule. There may be other factors that contribute to the above plot's shape, such as whether workers fly in their own time or in company time, as this would factor into things such as penalty rates on weekends.
+Looking at information online on FIFO flights and which days on the week they are: one website<sup><a href="#ref6">6</a></sup> mentions how you fly out at the beginning of the week, typically Sunday or Monday (which contrasts with my dataset which seems to be Monday or Tuesday) and return in two weeks or so repeatedly on a 2:1 schedule. There may be other factors that contribute to the above plot's shape, such as whether workers fly in their own time or in company time, as this would factor into things such as penalty rates on weekends.
 
 <br>
 
@@ -76,7 +67,7 @@ Looking at information online on FIFO flights and which days on the week they ar
 Learning about FIFO work from an aviation point of view was intriguing and I see it as something to further look into. Today's analysis also raises some questions and thoughts:
 
 * Which FIFO routes are more susceptible to crossing regions likely to form contrails?
-* How does aircraft type affect contrail formation, given that FIFO flights are considerably smaller than intercity flights?
+* How does aircraft type affect contrail formation, given that FIFO flights are considerably smaller than intercity flights? **(see [Entry 11]({% post_url 2026-10-04-entry-11-fifo-and-contrails %}))**.
 * How does the frequency of FIFO flights vary seasonally?
 
 <br>
@@ -84,7 +75,7 @@ Learning about FIFO work from an aviation point of view was intriguing and I see
 ### References
 
 <div class="references">
-  <p><a name="ref1">[1]</a> <a href="https://www.bravusmining.com.au/what-is-fifo-work-in-australia/">FIFO work — Bravus Mining</a></p>
+  <p><a name="ref1">[1]</a> Cummings Economics (2013). <a href="https://www.cummings.net.au/pdf/recent/J2681FIFOWorkforceCairnsRegion.pdf">FIFO workforce in the Cairns region</a> (Report J2681).</p>
   <p><a name="ref2">[2]</a> Windle, J., & Rolfe, J. (2013). <a href="https://doi.org/10.1016/j.resourpol.2012.10.006">Using discrete choice experiments to assess the preferences of new mining workforce to commute or relocate to the Surat Basin in Australia.</a> <em>Resources Policy</em>, 38(2), 169–180.</p>
   <p><a name="ref3">[3]</a> Tim D Smithies, Grace E Vincent, Sally A Ferguson, Gemma Maisey, Holly Fraser, Ian C Dunican, <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry</a>, Annals of Work Exposures and Health, Volume 70, Issue 2, March 2026, wxag007</p>
   <p><a name="ref4">[4]</a> Qantas Group. <a href="https://www.qantas.com/en-au/where-we-fly/network-aviation">Network Aviation.</a></p>

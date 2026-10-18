@@ -1,18 +1,18 @@
 ---
-preview_image: entry_8_corridor_map.png
+preview_image: entry_8_corridor_map_2.png
 description: Looking at a bigger set of matched contrails and ADS-B data to reveal where contrail hotspots may be in Western Australia in April 2026.
 ---
 
 ## Entry 8: Examining Interior WA
 
-Some regions we identified in past entries included the Bass Strait and Tasman Sea. These were areas where climate conditions made contrail formation likely, but also where air traffic was high enough. For the Tasman Sea, we can imagine flights between Australia and NZ, and Bass Strait includes flights from the Australian mainland to Tasmania. 
+Some regions identified in past entries included the Bass Strait and Tasman Sea. These were areas where climate conditions made contrail formation likely, but also where air traffic was high enough. For the Tasman Sea, we can imagine flights between Australia and NZ, and Bass Strait includes flights from the Australian mainland to Tasmania. 
 
-One region we also discovered last entry was Interior WA. Today's entry will take a look at this in more detail from a purely data point of view.
+One region that was also discovered last entry was Interior WA. Today's entry will take a look at this in more detail from a purely data point of view.
 
 ---
 
 ## The Data
-While entry 7 had eight days worth of data that aligns between ADSB air traffic and Google Contrails data, for today's analysis, we have data spanning across 24 days between 3-26 April, 2026.
+While entry 7 had eight days' worth of data that aligns between ADSB air traffic and Google Contrails data, for today's analysis, we have data spanning across 24 days between 3-26 April, 2026.
 
 The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with CFI>0.001, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the CFI and air traffic. 
 
@@ -49,7 +49,7 @@ Our first plot shows the amount of at-risk observations across the 24-days.
 
 What's interesting to observe is that there are lots of days where at-risk observations are little to zero, and there are several days with notable "spikes". The most prominent example is April 22, which accounts for 43% of all observations from our dataset.
 
-The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. It would be interesting to look into other factors that may have caused this, such humidity and temperatures that day.
+The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. It would be interesting to look into other factors that may have caused this, such as humidity and temperatures that day.
 
 
 ## At What Height Did Airplanes Get Caught in Contrail-Forming Air?
@@ -66,7 +66,7 @@ The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. 
 Below is a way to visualise everything from a bigger picture point of view with routes out of Perth visible. 
 
 <figure>
-  <img src="/assets/images/entry_8_corridor_map.png" alt="Map of the Perth to east-coast corridor over interior WA">
+  <img src="/assets/images/entry_8_corridor_map_2.png" alt="Map of the Perth to east-coast corridor over interior WA">
   <figcaption>Where it happens — the Perth to east-coast corridor</figcaption>
 </figure>
 

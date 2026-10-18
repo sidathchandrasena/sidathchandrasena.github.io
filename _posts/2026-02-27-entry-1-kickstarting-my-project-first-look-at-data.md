@@ -5,7 +5,7 @@ description: Setting up the Google Contrails API and importing a week of data wi
 
 ## Entry 1: Kickstarting My Project + First Look at Data
 
-Here's where I get started on my contrails journey!
+In this entry, I will be setting up a data pipeline and taking a first look at some contrails data.
 
 To begin, I setup the Google Contrails API, which returns a dataset containing longitude, latitude, altitude (flight level), datetime, and contrail forcing index values ranging from 0 (None) to 4 (Extreme). The provided sample code on the website allowed me to practice requesting data for one specific datetime.
 
@@ -14,7 +14,7 @@ I then modified the code to import a week's worth of data into a simple, local S
 Then I generated some plots from the data to get some first glimpses into what the data looks like.
 
 ### Average Contrail Forcing Index (CFI) by Hour of Day
-With only four times of the day across 6-hour intervals, it is difficult to make any strong observations. But something that can be noticed below is that contrail forcing index peaks at around 14 UTC which is between 12am Australian Eastern Standard Time (AEST). It seems to be lowest at 2 UTC or 12:00 PM noon AEST.
+With only four times of the day across 6-hour intervals, it is difficult to make any strong observations. But something that can be noticed below is that contrail forcing index peaks at around 14 UTC (00:00 Australian Eastern Standard Time or AEST). It seems to be lowest at 2 UTC or 12:00 PM noon AEST.
 
 ![Average Contrail Forcing Index by Hour of Day](/assets/images/entry_1a_hourly.png)
 

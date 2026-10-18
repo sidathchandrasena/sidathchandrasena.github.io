@@ -27,17 +27,19 @@ Looks ready for some more analysis!
 
 
 ## Analysis
-Now we have around 2 month's worth of data, we can look into contrail formation in Australia during the winter period.
+Now we have around 2 months' worth of data, we can look into contrail formation in Australia during the winter period.
 
 From an initial look at the dataset, it was found that **97.1%** of `contrails` values were found to be zero. It is important to note here that the `contrails` variable is an output from the Google Contrails API that is not measured data, but rather an index that comes from a combination of satellite observations, ML model's output, ECMWF HRES forecast data and CoCiP (Contrail Cirrus Prediction)<sup><a href="#ref1">1</a></sup>. So this may reflect the model's limitations in data-sparse regions rather than the actual atmospheric conditions.
 
 To get more meaningful results from the data, two variables were created to quantify the frequency and intensity of contrails.
 
-**Mean contrail forcing index:**  Filters to rows where `contrails` > 0 then averaging within groups. Answers question of: how intense are contrails when they form?
+**Mean contrail forcing index:** For each map "cell", the average CFI is calculated across different timestamps and flight levels. These rows include CFI values of zero as well.
 
-**Contrail Frequency:** A binary flag per timestamp which returns 1 if `contrails` > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of the time do contrails form here at all?
+**Contrail Frequency:** A binary flag per row which returns 1 if CFI > 0 and 0 if not, which is then averaged within groups. Answers question of: what fraction of timestamp-flight level combinations are contrail-forming?
 
 These 2 variables were then represented spatially using GeoPandas, shapefiles of Australia and coordinates of major cities using the longitudes & latitudes, resulting in these plots:
+
+*Please note that the below plots refer to the CFI as "probability" and could not be regenerated to update the accurate naming because the data was originally stored in a local database.*
 
 ### Plot 1: Mean Contrail Forcing Index
 ![Mean Contrail Forcing Index Hotspot Map](/assets/images/entry_3_hotspot_mean.png)
@@ -47,7 +49,7 @@ These 2 variables were then represented spatially using GeoPandas, shapefiles of
 ![Contrail Frequency](/assets/images/entry_3_hotspot_frequency.png)
 
 
-Plots 1 and 2 show that both intensity and frequency of contrail formation are concentrated towards the south of the continent, with some interesting activity in the North to a lesser extent.
+Plots 1 and 2 show that both strength and frequency of contrail formation are concentrated towards the south of the continent, with some interesting activity in the North to a lesser extent.
 
 
 ### Plot 3: Altitude Profile
@@ -59,7 +61,7 @@ Between FL270-FL440, notable altitudes for contrail frequency and intensity appe
 ### Plot 4: Hotspot Maps by Flight Level Band
 ![Hotspot Maps by Flight Level Band](/assets/images/entry_3_band_maps.png)
 
-The above is probably the most interesting plot in my opinion! It reveals that the hotspot locations are altitude dependent, with higher likelihood for contrail formation over the Southern Ocean south of the mainland at a mid-cruise altitude (34-39,000 ft) while higher concentrations near Darwin and Northern Queensland are at an upper cruising altitude between 40-44,000 ft. This is super insightful!
+The above is probably the most interesting plot in my opinion. It reveals that the hotspot locations are altitude dependent, with higher likelihood for contrail formation over the Southern Ocean south of the mainland at a mid-cruise altitude (34-39,000 ft) while higher concentrations near Darwin and Northern Queensland are at an upper cruising altitude between 40-44,000 ft. This suggests that any avoidance strategy would need to vary based on the region it's in.
 
 ---
 

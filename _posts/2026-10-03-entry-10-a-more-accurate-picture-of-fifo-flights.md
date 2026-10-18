@@ -56,7 +56,7 @@ On major airlines:
 
 **Alliance Airlines:** Could not find a clear designation of flight number being FIFO or not. Considering it's described as Australia's major FIFO operator, I am going to label all as FIFO despite it being a simplification.
 
-**Rex (Regional Express):** all FIFO flights are operated via National Jet Express, so all ZL/RXA flights can be labeled as non-FIFO<sup><a href="#ref6">6</a></sup>.
+**Rex (Regional Express):** all FIFO flights are operated via National Jet Express, so I labelled all ZL/RXA flights as non-FIFO<sup><a href="#ref6">6</a></sup>.
 
 <br>
 #### Origin/Destination Filtering
@@ -68,7 +68,7 @@ I located the airports of several confirmed mine sites using the ICAO codes: "YC
 <br>
 After doing both of these filtering actions, I got the following using pandas crosstab. 
 
-Note that the "unknown" label was applied when the standingdata merge did not result in a match for the callsign so the origin or destination of a flight could not be determined, nor could the FIFO status be later determined from the flight number. "Unlabeled" is used when there was a flight number with a matching origin/destination but none of the flight number airline-specific rules were applied to them. I couldn't determine a flight number rule for Network Aviation to classify as FIFO/non-FIFO, which is a weakness as most flights are likely to be FIFO but outside of my mine-site airport list. "none" represents cases where the flight callsign failed to match with an airline in my list from Wikipedia of Australian airlines, which are mostly small Australian-registered aircraft which are private, business and small charter flights.
+Note that the "unknown" label was applied when the standingdata merge did not result in a match for the callsign so the origin or destination of a flight could not be determined, nor could the FIFO status be later determined from the flight number. "Unlabelled" is used when there was a flight number with a matching origin/destination but none of the flight number airline-specific rules were applied to them. I couldn't determine a flight number rule for Network Aviation to classify as FIFO/non-FIFO, which is a weakness as most flights are likely to be FIFO but outside of my mine-site airport list. "none" represents cases where the flight callsign failed to match with an airline in my list from Wikipedia of Australian airlines, which are mostly small Australian-registered aircraft which are private, business and small charter flights.
 
 There are definitely a lot of limitations in the dataset, but let's see if there's an improvement to the plots:
 
@@ -99,7 +99,7 @@ The effects are much more pronounced for FIFO flights, with a large majority of 
 
 ![FIFO vs non-FIFO in WA by day of week compared with Entry 9](/assets/images/entry_10_comparison_day_of_week.png)
 
-Compared to Entry 9, we see a more visible split in proportion of weekend flights for FIFO compared to non-FIFO Saturday through Monday and then more FIFO flights occurring on weekdays. Weekend flights are uncommon for FIFO perhaps because weekends result in penalty rates for crew (higher expenses) and there are limited flights in regional areas on weekends.
+Compared to Entry 9, there is a more visible split in proportion of weekend flights for FIFO compared to non-FIFO Saturday through Monday and then more FIFO flights occurring on weekdays. Weekend flights are uncommon for FIFO perhaps because weekends result in penalty rates for crew (higher expenses) and there are limited flights in regional areas on weekends.
 
 <br>
 
@@ -113,7 +113,7 @@ It is exciting to work with the data directly on Jupyter Notebooks using Pandas 
   <p><a name="ref3">[3]</a> Hong Kong Airlines. <a href="https://www.hongkongairlines.com/en_CN/FFP/earn/airlines_partner-VA">Airline partner: Virgin Australia.</a></p>
   <p><a name="ref4">[4]</a> Australian Frequent Flyer. <a href="https://www.australianfrequentflyer.com.au/qantas-flight-numbers/">Qantas flight numbers.</a></p>
   <p><a name="ref5">[5]</a> Qantas Group. <a href="https://www.qantas.com/en-au/where-we-fly/network-aviation">Network Aviation.</a></p>
-  <p><a name="ref6">[6]</a> Wikipedia. <a href="https://en.wikipedia.org/wiki/National_Jet_Express">National Jet Express.</a></p>
+  <p><a name="ref6">[6]</a> Regional Express (Rex) (2022, September 30). <a href="https://www.rex.com.au/BlobViewer/BlobViewer.aspx?attachtype=MR&filename=6F6254563278466A6A474853692B6D756A31643639342F66716361714562457647676D6C7467465836774C6178415073444F78563470434E4B4B656F7533394B4E503158526358357A4F5A7769676F3646484E6F43673D3D">Rex finalises purchase of National Jet Express</a> [Media release].</p>
   <p><a name="ref7">[7]</a> Maisey, G., Cattani, M., Devine, A., Lo, J., Fu, S. C., & Dunican, I. C. (2022). <a href="https://doi.org/10.1016/j.apergo.2021.103617">Digging for data: How sleep is losing out to roster design, sleep disorders, and lifestyle factors.</a> <em>Applied Ergonomics</em>, 99, 103617.</p>
   <p><a name="ref8">[8]</a> Smithies, T. D., Vincent, G. E., Ferguson, S. A., Maisey, G., Fraser, H., & Dunican, I. C. (2026). <a href="https://doi.org/10.1093/annweh/wxag007">Drilling down on roster design: comparing fly-in fly-out roster patterns in the West Australian mining industry.</a> <em>Annals of Work Exposures and Health, 70</em>(2), wxag007.</p>
 </div>

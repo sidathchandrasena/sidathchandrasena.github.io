@@ -3,7 +3,7 @@ preview_image: entry_12_mel_syd_map.png
 description: Looking at the merged ADS-B and Contrails dataset in the popular Sydney to Melbourne flight corridor as a comparison to FIFO flights in Interior WA.
 ---
 
-## Entry 12: Contrails on the Busy SYD to MEL Route?
+## Entry 12: Contrails on the Busy SYD-MEL Route
 
 Today we're going to look at another region of interest I found earlier that also happens to be the busiest air route in the English speaking world<sup><a href="#ref1">1</a></sup>: Sydney to Melbourne.
 
@@ -63,7 +63,7 @@ I thought it would be interesting to visually see what all of this looked like o
 
 ![Map showing SYD-MEL route](/assets/images/entry_12_mel_syd_map.png)
 
-We can see two main trajectories that are reasonably busy between Sydney and Melbourne with several points in contrail-forming air, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-forming areas?
+Two main trajectories can be seen that are reasonably busy between Sydney and Melbourne with several points in contrail-forming air, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-forming areas?
 
 <br>
 #### Concluding Remarks

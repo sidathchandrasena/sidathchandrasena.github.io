@@ -14,7 +14,7 @@ Next, the rounded timestamp column was filtered in the ADS-B dataset to make sur
 
 Then the rounded matching columns in the ADS-B dataset were renamed to match the contrails dataset and a left merge was performed.
 
-The `fillna()` command was run on `contrails` for rows where there was no match, as this indicates a contrail forcing index of zero. Then, the combined dataset was filtered for cases where a CFI > 0.001 was found so we can look at "at-risk" observations.
+The `fillna()` command was run on `contrails` for rows where there was no match, as this indicates a contrail forcing index of zero. A sighting is counted as "at-risk" when CFI > 0.001.
 
 Next, I created a new variable called `local_date` to convert the timestamp from UTC to Perth time.
 
@@ -26,7 +26,7 @@ I first wanted to see how many of the flights in the dataset that pass through c
 
 ![Flights that passed through contrail-forming air FIFO vs non-FIFO](/assets/images/entry_11_contrail_distribution.png)
 
-The plot shows the split between non-FIFO and FIFO flights that passed through contrail-forming air (if any of its sightings over WA was in a cell with CFI > 0.001). 
+The plot shows the share of non-FIFO and FIFO flights that passed through contrail-forming air (if any of its sightings over WA was in a cell with CFI > 0.001). 
 
 This revealed 2.1% of FIFO flights (n = 910) passing through contrail-forming air compared to 2.9% of non-FIFO flights (n = 1672). Considering that 2.1% of 910 is around 19 flights and 2.9% of 1672 is around 48 flights, a two proportion z-test on Jupyter Notebooks using the math module gets a p-value of 0.23, which is not statistically significant and shows that the data doesn't provide enough evidence of a true difference between the two. So more data is needed to understand this gap.
 
@@ -42,7 +42,7 @@ As seen above, non-FIFO flights dominate at altitudes beyond FL340 and contrail-
 <br>
 ![FIFO vs non-FIFO routes by frequency](/assets/images/entry_11_aircraft_distribution.png)
 
-Let's compare the difference between the cruising altitude of a Fokker 100 with a Boeing 737-800. Fokker 100 has a max cruising altitude of 35,000 ft<sup><a href="#ref1">1</a></sup> while Boeing 737-800 has a max cruising altitude of 41,000 ft<sup><a href="#ref2">2</a></sup>. While the Fokker 100's maximum altitude is still within the above "contrail-prone" altitude grid, it helps with understanding why FIFO flights may represent a smaller portion of the flights in the region of interest. 
+Let's compare the difference between the cruising altitude of a Fokker 100 with a Boeing 737-800. Fokker 100 has a maximum operating altitude of 35,000 ft<sup><a href="#ref1">1</a></sup> while Boeing 737-800 has a maximum operating altitude of 41,000 ft<sup><a href="#ref2">2</a></sup>. While the Fokker 100's maximum altitude is still within the above "contrail-prone" altitude grid, it helps with understanding why FIFO flights may represent a smaller portion of the flights in the region of interest. 
 
 
 <br>
@@ -56,7 +56,7 @@ Perhaps this should be taken with some skepticism, however, as the right-hand pl
 
 <br>
 #### Concluding Remarks
-These findings can take us in many directions. What I am most curious from today's results is identifying which FIFO aircraft are responsible for those results in the contrail risk zone. I am guessing that they are those flights in those planes that match the common planes for non-FIFO services, such as Airbus A320s and Boeing 737-800s. From this I wonder: what prompts a FIFO service or charter to be done in a large passenger jet as opposed to a small one? What are those routes? What are the implications of a shift in aircraft operation on the mining industry and the FIFO workforce?
+These findings can take us in many directions. What I am most curious about from today's results is identifying which FIFO aircraft are responsible for those results in the contrail risk zone. I am guessing that they are those flights in those planes that match the common planes for non-FIFO services, such as Airbus A320s and Boeing 737-800s. From this I wonder: what prompts a FIFO service or charter to be done in a large passenger jet as opposed to a small one? What are those routes? What are the implications of a shift in aircraft operation on the mining industry and the FIFO workforce?
 
 I plan to take a small break from looking at FIFO work to compare this to another region of interest identified in a previous entry: the infamous Sydney-Melbourne route.
 
@@ -65,6 +65,6 @@ I plan to take a small break from looking at FIFO work to compare this to anothe
 ### References
 
 <div class="references">
-  <p><a name="ref1">[1]</a> Aeropedia. <a href="https://aeropedia.com.au/content/fokker-100/">Fokker 100.</a></p>
-  <p><a name="ref2">[2]</a> RocketRoute. <a href="https://www.rocketroute.com/aircraft/boeing-737-800">Boeing 737-800.</a></p>
+  <p><a name="ref1">[1]</a> European Union Aviation Safety Agency (2022). <a href="https://www.easa.europa.eu/en/downloads/7450/en">Type-Certificate Data Sheet No. EASA.A.037 for Fokker F28</a> (Issue 08; F28 Mark 0100 section).</p>
+  <p><a name="ref2">[2]</a> European Union Aviation Safety Agency (2025). <a href="https://www.easa.europa.eu/en/downloads/7297/en">Type-Certificate Data Sheet No. IM.A.120 for Boeing 737</a> (Issue 29; 737 Next Generation sections).</p>
 </div>
