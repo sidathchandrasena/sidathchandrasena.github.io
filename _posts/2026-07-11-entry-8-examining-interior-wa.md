@@ -11,7 +11,7 @@ One region that was also discovered last entry was Interior WA. Today's entry wi
 
 ---
 
-## The Data
+#### The Data
 While entry 7 had eight days' worth of data that aligns between ADSB air traffic and Google Contrails data, for today's analysis, we have data spanning across 24 days between 3-26 April, 2026.
 
 The ADS-B dataset contained over 9,000 entries. From this, we came up with a yes/no flag on a single aircraft sighting. If at that moment, a plane is inside a grid cell with CFI>0.001, the sighting is counted as "at-risk". A single plane can have multiple counts inside an at-risk cell, and unlike the previous entry, it is not a compound score of the CFI and air traffic. 
@@ -39,7 +39,7 @@ Our data can now be summarised as:
 | Days with at least one at-risk flight | **9 of 24** |
 
 
-## At-Risk Observations Across the 24 Days
+#### At-Risk Observations Across the 24 Days
 Our first plot shows the amount of at-risk observations across the 24-days. 
 
 <figure>
@@ -52,8 +52,10 @@ What's interesting to observe is that there are lots of days where at-risk obser
 The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. It would be interesting to look into other factors that may have caused this, such as humidity and temperatures that day.
 
 
-## At What Height Did Airplanes Get Caught in Contrail-Forming Air?
-The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. There is a noticeable peak at around FL370, which is standard narrowbody cruise altitude. This is some food for thought, as it may pose a challenge for any altitude avoidance strategies.
+#### At What Height Did Airplanes Get Caught in Contrail-Forming Air?
+The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. There is a noticeable peak at around FL370, which is standard narrowbody cruise altitude. This is some food for thought, as it may pose a challenge for any altitude avoidance strategies. 
+
+If contrail-forming air can be anywhere across this range of altitudes, avoiding it with altitude-avoidance strategies can also result in an increase in fuel burn. However, researchers at Imperial College London<sup><a href="#ref1">1</a></sup> and the University of Cambridge<sup><a href="#ref2">2</a></sup> found that the warming avoided more than offset this fuel burn.
 
 
 <figure>
@@ -62,7 +64,7 @@ The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. 
 </figure>
 
 
-## Map of Observations by Contrail Forcing Index
+#### Map of Observations by Contrail Forcing Index
 Below is a way to visualise everything from a bigger picture point of view with routes out of Perth visible. 
 
 <figure>
@@ -95,4 +97,11 @@ Below is also the distribution by aircraft type:
 
 Out of the three regions of interest in Australian airspace, Interior WA intrigues me a lot because it is an interesting case where there is an entire industry that requires people to fly short-haul constantly for their commute. More to come in my next post to unpack what FIFO is.
 
+---
 
+### References
+
+<div class="references">
+  <p><a name="ref1">[1]</a> Teoh, R., Schumann, U., Majumdar, A., & Stettler, M. E. J. (2020). <a href="https://doi.org/10.1021/acs.est.9b05608">Mitigating the climate forcing of aircraft contrails by small-scale diversions and technology adoption.</a> <em>Environmental Science & Technology</em>, 54(5), 2941–2950.</p>
+  <p><a name="ref2">[2]</a> Smith, J. R., Grobler, C., Hodgson, P. J., et al. (2026). <a href="https://doi.org/10.1038/s41467-026-68784-8">The climate opportunities and risks of contrail avoidance.</a> <em>Nature Communications</em>, 17, 2092.</p>
+</div>

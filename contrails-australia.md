@@ -26,13 +26,13 @@ What are those white lines in the air next to planes? This website will document
 
 **How I Measured Contrail Exposure:** 
 <br>In all of my entries so far, I have used different measures to assess contrail risk. These include:
-* Mean CFI: average contrail forcing index score (0-4) over the whole period
-* Exposure Index: how busy a square is (air traffic) multiplied by how often it has contrail conditions, both scaled from 0-1
-* Per-flight route score: draws a straight path between 2 airports and averages the contrail risk of every square it crosses
-* Compound Risk Score: how many aircraft sightings multiplied by average CFI score (with more refined data compared to Exposure Index)
-* Share of At-Risk Sightings: percentage of all aircraft sightings inside a contrail-forming square at that moment
-* Hit Rate: percentage of sightings in contrail-forming air split by route group
-* Per-Flight Hit Rate: percentage of flights with at least one sighting in contrail-forming air
+* **Mean CFI:** average contrail forcing index score (0-4) over the whole period
+* **Exposure Index:** how busy a square is (air traffic) multiplied by how often it has contrail conditions, both scaled from 0-1
+* **Per-flight route score:** draws a straight path between 2 airports and averages the contrail risk of every square it crosses
+* **Compound Risk Score:** how many aircraft sightings multiplied by average CFI score (with more refined data compared to Exposure Index)
+* **Share of At-Risk Sightings:** percentage of all aircraft sightings inside a contrail-forming square at that moment
+* **Hit Rate:** percentage of sightings in contrail-forming air split by route group
+* **Per-Flight Hit Rate:** percentage of flights with at least one sighting in contrail-forming air
 
 **Limitations:** Short data windows, rough FIFO labelling, the Google Contrails data is the output of a model rather than data containing actual contrails.
 

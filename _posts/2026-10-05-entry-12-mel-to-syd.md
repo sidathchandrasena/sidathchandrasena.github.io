@@ -32,7 +32,7 @@ The results show a confidence interval (CI) of around 0.8%, so the true hit rate
 
 The 34 "hits" were collected across 4 days, with most of the hits on 22nd April and then 26th April, so it may just reflect weather events across two days rather than the route itself, and more data is needed to confirm this.
 
-Interestingly, 22nd April was also the day that most at-risk observations were seen over Interior WA in [Entry 8]({% post_url 2026-07-11-entry-8-examining-interior-wa %}) which suggests that a large-scale weather event may have occurred affecting both regions at once.
+Interestingly, 22nd April was also the day that most at-risk observations were seen over Interior WA in [Entry 8]({% post_url 2026-07-11-entry-8-examining-interior-wa %}) which suggests that a large-scale weather event may have occurred affecting both regions at once. Satellite imagery from 22 April can be used in hindsight to verify whether contrails actually formed over both regions that day.
 
 
 <br>
@@ -65,9 +65,17 @@ I thought it would be interesting to visually see what all of this looked like o
 
 Two main trajectories can be seen that are reasonably busy between Sydney and Melbourne with several points in contrail-forming air, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-forming areas?
 
+#### What would avoidance look like here?
+
+Contrail-forming layers are wide but only a few hundred metres deep<sup><a href="#ref2">2</a></sup>, so climbing or descending around them is easier than flying around them. The Royal Aeronautical Society also describes vertical avoidance as the "most effective route"<sup><a href="#ref3">3</a></sup> but says that in congested airspace, horizontal avoidance might be needed. This would be especially applicable if the routes in the plot above are fixed. Changing the altitude however may be harder in a busy corridor like here where flights all share a limited number of altitudes, and more information will need to be studied to better understand this flight corridor. 
+
+There are 2 ways to avoid ice-supersaturated regions or ISSRs: pre-tactical avoidance, which is done before the flight departs, or tactical avoidance, where the avoidance manoeuvers are chosen during the flight<sup><a href="#ref4">4</a></sup>. The latter may pose a greater challenge for the workload of air traffic controllers, a role facing reported staffing shortages in Australia<sup><a href="#ref5">5</a></sup>.
+
 <br>
 #### Concluding Remarks
 It has been fascinating to compare FIFO services in Interior WA with a much busier part of airspace in Australia. As I look at the above map, I am curious on what makes up the busy air corridor between Sydney and Melbourne. FIFO services tend to be in rural SA, QLD and WA - are they virtually non-existent here? If not, then which group of flights make up the "other" seen in the chart, and are they international or domestic?
+
+Another thing to consider is that my hit rates here counted whether a flight passed through a square where a persistent contrail is likely. However, warming varies between contrails. As mentioned in [Entry 3]({% post_url 2026-03-09-entry-3-contrail-probabilities-with-respect-to-latitude-altitude-time %}), night-time contrails create more warming than daytime contrails as they only trap heat rather than reflect it. This difference is currently not captured in my analysis, and needs to be covered in the future to better understand which flights have the most impact on the climate. For a start, it would be worth checking whether the hits I found were mostly night-time contrails.
 
 ---
 
@@ -75,4 +83,8 @@ It has been fascinating to compare FIFO services in Interior WA with a much busi
 
 <div class="references">
   <p><a name="ref1">[1]</a> OAG (2025). <a href="https://www.oag.com/busiest-routes-world-2025">Busiest Routes in the World 2025.</a></p>
+  <p><a name="ref2">[2]</a> Jaramillo, P., Kahn Ribeiro, S., Newman, P., et al. (2022), Transport. In <em>Climate Change 2022: Mitigation of Climate Change</em>, Contribution of Working Group III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC) — <a href="https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter10.pdf">Chapter 10: Transport</a>, p. 1089 (doi:10.1017/9781009157926.012)</p>
+  <p><a name="ref3">[3]</a> Royal Aeronautical Society, Greener by Design Specialist Group (2023, April). <a href="https://www.aerosociety.com/media/20657/contrails-and-contrail-management-briefing-paper.pdf">Contrails and contrail management</a> [Briefing paper].</p>
+  <p><a name="ref4">[4]</a> Transport & Environment. <a href="https://www.transportenvironment.org/articles/contrail-avoidance">Contrail Avoidance.</a></p>
+  <p><a name="ref5">[5]</a> Kennedy, J. (2026, August 10). <a href="https://www.abc.net.au/news/2026-08-10/sydney-airport-near-miss-catherine-king-airservices-staff/107014408">Sydney Airport near miss 'could have been far more serious', air safety boss says.</a> ABC News.</p>
 </div>

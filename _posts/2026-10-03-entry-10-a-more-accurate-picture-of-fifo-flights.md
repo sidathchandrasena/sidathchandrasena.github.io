@@ -94,7 +94,9 @@ Next, I plotted my plots from Entry 9 with the newly filtered and more accurate 
 
 ![FIFO vs non-FIFO in WA by hour of day compared with Entry 9](/assets/images/entry_10_comparison_time_of_day.png)
 
-The effects are much more pronounced for FIFO flights, with a large majority of flights occurring early in the day or around 5pm. This is explained as the "morning wave", where workers arrive early to get to the site and work their 12-hour days by mid-morning<sup><a href="#ref7">7</a></sup>. The rise in the afternoon is explained by workers completing their shifts and returning to Perth where they commute home<sup><a href="#ref8">8</a></sup>. 
+The effects are much more pronounced for FIFO flights, with a large majority of flights occurring early in the day or around 5pm. This is explained as the "morning wave", where workers arrive early to get to the site and work their 12-hour days by mid-morning<sup><a href="#ref7">7</a></sup>. The rise in the afternoon is explained by workers completing their shifts and returning to Perth where they commute home<sup><a href="#ref8">8</a></sup>.
+
+The human factors element here is important for any future contrail-avoidance scheme. Maisey et al. <sup><a href="#ref7">7</a></sup> found that shift start times earlier than 06:00 can result in significant sleep loss and reduced alertness throughout the day, which can pose accident and health risks. The implications of this are that shifting FIFO departures to avoid contrail-forming air would need to balance accounting for its effect on workers with costs to companies such as weekend penalty rates.
 
 
 ![FIFO vs non-FIFO in WA by day of week compared with Entry 9](/assets/images/entry_10_comparison_day_of_week.png)
