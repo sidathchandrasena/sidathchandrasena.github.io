@@ -1,10 +1,11 @@
+<hr>
 <div class="post_navi">
   {%- if page.previous.url -%}
   <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Previous Post</div><div><span>{{ page.previous.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ '/' | absolute_url }}" title="Home">
+  <a class="post_navi-item nav_prev" href="{{ '/contrails-australia/' | relative_url }}" title="Home">
     <div class="post_navi-arrow">&lt;</div><div class="post_navi-label">Home</div><div><span>Back to all posts</span></div>
   </a>
   {%- endif -%}
@@ -13,9 +14,8 @@
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Next Post</div><div><span>{{ page.next.title }}</span></div>
   </a>
   {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ '/' | absolute_url }}" title="Home">
+  <a class="post_navi-item nav_next" href="{{ '/contrails-australia/' | relative_url }}" title="Home">
     <div class="post_navi-arrow">&gt;</div><div class="post_navi-label">Home</div><div><span>Back to all posts</span></div>
   </a>
   {%- endif -%}
 </div>
-<hr>

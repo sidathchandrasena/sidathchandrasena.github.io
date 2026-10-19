@@ -673,3 +673,19 @@ hr {
   color: #1c3a52;
   text-decoration: none;
 }
+
+/* Back link above post titles */
+.post-back {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: #4a7090;
+  text-decoration: none;
+}
+
+.post-back:hover {
+  color: #1c3a52;
+  text-decoration: none;
+}

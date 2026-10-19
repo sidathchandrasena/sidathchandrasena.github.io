@@ -14,7 +14,7 @@ layout: default
   <a class="project-card" href="/contrails-australia/">
     <div class="project-card-body">
       <h2 class="project-title">Contrails Australia</h2>
-      <p class="project-desc">An investigation into contrail formation in Australian skies — exploring where, when, and why these ice-crystal trails appear behind aircraft.</p>
+      <p class="project-desc">An investigation into contrail formation in Australian skies exploring where, when, and why these ice-crystal trails appear behind aircraft.</p>
     </div>
     <div class="project-tags">
       <span class="tag tag-tool">Python</span>
