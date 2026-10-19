@@ -3,7 +3,7 @@ preview_image: entry_1a_geographic.png
 description: Setting up the Google Contrails API and importing a week of data with an initial look at hourly trends, flight levels, and geographic distribution of contrail forcing index.
 ---
 
-## Entry 1: Kickstarting My Project + First Look at Data
+## Entry 1: Kickstarting My Project
 
 In this entry, I will be setting up a data pipeline and taking a first look at some contrails data.
 

@@ -4,6 +4,7 @@
     {%- if page.url == "/" or page.url == "/about-me/" -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     {%- else -%}
+      <a class="site-back" href="/">← All Projects</a>
       <a class="site-title" rel="author" href="{{ "/contrails-australia/" | relative_url }}">Contrails Australia</a>
     {%- endif -%}
 
@@ -21,7 +22,7 @@
         {%- if page.url == "/" or page.url == "/about-me/" -%}
           <a class="page-link" href="/about-me/">About Me</a>
         {%- else -%}
-          <a class="page-link" href="/about/">About This Project</a>
+          <a class="page-link" href="/about/">About The Project</a>
         {%- endif -%}
       </div>
     </nav>

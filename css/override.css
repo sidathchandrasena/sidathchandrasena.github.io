@@ -232,7 +232,7 @@ body.contrails-theme hr {
   box-shadow: 0 2px 8px rgba(0, 60, 120, 0.12);
 }
 
-/* Accordion (About This Project) */
+/* Accordion (About The Project) */
 .accordion {
   border: 1px solid #bdd0e8;
   border-radius: 8px;
@@ -637,4 +637,39 @@ hr {
   border-radius: 4px;
   cursor: zoom-out;
   box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+}
+/* About the author photo */
+.author-photo {
+  float: left;
+  width: 96px !important;
+  height: 96px !important;
+  max-width: none;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0.25rem 1.25rem 0.5rem 0;
+}
+
+.accordion-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* "All Projects" back link on project sites */
+.site-back {
+  float: left;
+  line-height: 54px;
+  margin-right: 1.25rem;
+  padding-right: 1.25rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  color: #3a5a72;
+  text-decoration: none;
+}
+
+.site-back:hover {
+  color: #1c3a52;
+  text-decoration: none;
 }

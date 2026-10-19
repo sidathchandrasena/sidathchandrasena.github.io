@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About This Project
+title: About The Project
 permalink: /about/
 noindex: true
 ---
@@ -52,8 +52,14 @@ noindex: true
 <details class="accordion">
   <summary>About the author</summary>
   <div class="accordion-body">
-    <p>My name is <strong>Sidath Chandrasena</strong>. I am a recent graduate with a dual degree in Integrative Engineering and International Studies with a minor in Data Science from Lafayette College. I work as a software engineer and this project combines my background in data and my long-standing interest in aviation and the environment. The analysis is built on Python, PostgreSQL, and GeoPandas, using data from the Google Contrails API<sup><a href="#ref6">6</a></sup>, ADSB.fi<sup><a href="#ref7">7</a></sup>, OpenSky Network<sup><a href="#ref8">8</a></sup> and the Bureau of Infrastructure and Transport Research Economics (BITRE)<sup><a href="#ref9">9</a></sup>.</p>
-    <p>Growing up in Australia, I saw first-hand that reliance on air travel. <strong>Contrails Australia</strong> is my personal project to examine contrail formation in Australian skies using real atmospheric data — identifying hotspots, understanding the conditions that create them, and exploring what avoidance might look like in practice.</p>
+    <img src="/assets/images/sidath.jpg" alt="Sidath Chandrasena" class="author-photo">
+    <p>My name is <strong>Sidath Chandrasena</strong>. I am a recent graduate with a dual degree in Integrative Engineering and International Studies with a minor in Data Science from Lafayette College. I work as a software engineer and this project combines my background in data and my long-standing interest in aviation, the environment and interdisciplinary work. </p>
+    
+    <p>The analysis is built on Python, PostgreSQL, and GeoPandas, using data from the Google Contrails API<sup><a href="#ref6">6</a></sup>, ADSB.fi<sup><a href="#ref7">7</a></sup>, OpenSky Network<sup><a href="#ref8">8</a></sup> and the Bureau of Infrastructure and Transport Research Economics (BITRE)<sup><a href="#ref9">9</a></sup>.</p>
+
+    <p>As someone who grew up in Australia, I take a lot of interest in how Australia's unique geography plays a major role in its reliance on long-haul and domestic air travel to stay connected to the rest of the world, and how it is relatively unexplored compared to places in the Northern Hemisphere.</p>
+
+    <p><strong>Contrails Australia</strong> is my personal project to examine contrail formation in Australian skies using real atmospheric data by identifying hotspots, understanding the conditions that create them and exploring what avoidance might look like in practice.</p>
     <ul>
       <li><strong>GitHub:</strong> <a href="https://github.com/sidathchandrasena">sidathchandrasena</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sidath-chandrasena">sidath-chandrasena</a></li>
