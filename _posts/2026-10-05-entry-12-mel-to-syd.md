@@ -53,7 +53,7 @@ On the left, we have the distribution of the "hits" (places where the point was 
 
 
 
-![Comparison of SYD-MEL with other routes in contrail-forming air](/assets/images/entry_12_mel_syd_hits.png)
+![Comparison of SYD-MEL with other routes in at-risk cells](/assets/images/entry_12_mel_syd_hits.png)
 
 So we can see that on the left plot, "other" flights account for a large portion of the hits. But that's also expected given that SYD-MEL is one out of many routes in that corridor. On the right however, we can see that the SYD-MEL route has a much higher amount of "hits". More analysis will need to be done to discover when this occurs. Is it at cruising altitude?
 
@@ -63,7 +63,7 @@ I thought it would be interesting to visually see what all of this looked like o
 
 ![Map showing SYD-MEL route](/assets/images/entry_12_mel_syd_map.png)
 
-Two main trajectories can be seen that are reasonably busy between Sydney and Melbourne with several points in contrail-forming air, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering contrail-forming areas?
+Two main trajectories can be seen that are reasonably busy between Sydney and Melbourne with several points in at-risk cells, which points to something valuable for future evaluation. Some questions to be asked here include: are these the most popular trajectories for this route and if so, why? What are some of the implications of changing this route, if it reduces the likelihood of entering at-risk cells?
 
 #### What would avoidance look like here?
 
@@ -75,7 +75,7 @@ There are 2 ways to avoid ice-supersaturated regions or ISSRs: pre-tactical avoi
 #### Concluding Remarks
 It has been fascinating to compare FIFO services in Interior WA with a much busier part of airspace in Australia. As I look at the above map, I am curious on what makes up the busy air corridor between Sydney and Melbourne. FIFO services tend to be in rural SA, QLD and WA - are they virtually non-existent here? If not, then which group of flights make up the "other" seen in the chart, and are they international or domestic?
 
-Another thing to consider is that my hit rates here counted whether a flight passed through a square where a persistent contrail is likely. However, warming varies between contrails. As mentioned in [Entry 3]({% post_url 2026-03-09-entry-3-contrail-probabilities-with-respect-to-latitude-altitude-time %}), night-time contrails create more warming than daytime contrails as they only trap heat rather than reflect it. This difference is currently not captured in my analysis, and needs to be covered in the future to better understand which flights have the most impact on the climate. For a start, it would be worth checking whether the hits I found were mostly night-time contrails.
+Another thing to consider is that my hit rates here count whether a flight passed through a square with a CFI > 0.001. However, warming varies between contrails. As mentioned in [Entry 3]({% post_url 2026-03-09-entry-3-contrail-probabilities-with-respect-to-latitude-altitude-time %}), night-time contrails create more warming than daytime contrails as they only trap heat rather than reflect it. Although the day/night warming difference is factored into CFI, here a hit counts the same whether the expected warming is small or large, so it would be worth checking how many of my hits were at night.
 
 ---
 

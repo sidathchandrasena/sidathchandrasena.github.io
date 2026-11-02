@@ -17,7 +17,7 @@ noindex: true
 <details class="accordion">
   <summary>Why contrails matter</summary>
   <div class="accordion-body">
-    <p>Aircraft are responsible for around 2% of total global warming<sup><a href="#ref1">1</a></sup> and the aviation industry continues to grow post-pandemic. CO2 emissions make up most of the exhaust, but contrails from water vapour make up a majority of non-CO2 warming.</p>
+    <p>Aircraft are responsible for around 2% of total global CO2 emissions<sup><a href="#ref1">1</a></sup> and the aviation industry continues to grow post-pandemic. CO2 emissions make up most of the exhaust, but contrails from water vapour make up a majority of non-CO2 warming.</p>
     <p>Contrails do this by trapping heat in the atmosphere, with some estimates putting their warming effect on par with or exceeding that of aviation's direct carbon emissions<sup><a href="#ref2">2</a></sup>. As air traffic continues to grow, so does the scale of this effect. Recent research has complicated the picture further: warming estimates vary widely, and contrails forming inside existing cloud cover may behave very differently to those in clear skies. There is still a lot we don't fully understand.</p>
   </div>
 </details>
@@ -34,10 +34,10 @@ noindex: true
   <div class="accordion-body">
     <p>Did you know that:</p>
     <ul>
-      <li>Non-CO<sub>2</sub> effects, which include contrails, may account for as much as <strong>two-thirds of aviation's climate impact</strong>, as found in a 2018 study.<sup><a href="#ref2">2</a></sup></li>
-      <li>Contrails are estimated to be responsible for up to around <strong>57% of global aviation's net effective radiative forcing</strong>.<sup><a href="#ref4">4</a></sup></li>
-      <li>In 2019, around <strong>14% of flights formed a contrail with a warming effect</strong>, and only around <strong>2% of all flights created ~80% of warming</strong>.<sup><a href="#ref5">5</a></sup></li>
-      <li>The same study found that in 2019, <strong>more than 50% of global contrail effects were concentrated over Europe, North America and the North Atlantic</strong>.<sup><a href="#ref5">5</a></sup></li>
+      <li>Non-CO<sub>2</sub> effects, which include contrails, may account for as much as <strong>two-thirds of aviation's climate impact</strong>, as described in a 2021 study.<sup><a href="#ref2">2</a></sup></li>
+      <li>Contrails are estimated to be responsible for around <strong>57% of global aviation's net effective radiative forcing</strong>.<sup><a href="#ref4">4</a></sup></li>
+      <li>In 2019, around <strong>14% of flights formed a contrail with a warming effect</strong>, and only around <strong>2% of all flights created ~80% of annual contrail energy forcing</strong>.<sup><a href="#ref5">5</a></sup></li>
+      <li>The same study found that around 50% of global contrail energy forcing came from Europe, the USA and the North Atlantic.<sup><a href="#ref5">5</a></sup></li>
     </ul>
   </div>
 </details>
@@ -45,7 +45,7 @@ noindex: true
 <details class="accordion">
   <summary>What this project seeks to find</summary>
   <div class="accordion-body">
-    <p>My research questions continue to evolve as I create each new post and gain more knowledge. Broadly, this project focuses on understanding which regions in Australian skies have the highest crossover in air traffic and where contrail formation is most likely, and if they coincide. I would also like to look at what routes and types of flights have the most exposure to contrails and what types of strategies can be used to avoid contrails such as small changes to altitude or departure time and the operational trade-offs that come with them. I use different parts of Australia's aviation network as case studies, with a mix of regional and intercity routes which are shaped by Australia's different geography compared to US/Europe.</p>
+    <p>My research questions continue to evolve as I create each new post and gain more knowledge. Broadly, this project focuses on understanding which regions in Australian skies have the highest crossover in air traffic and where contrail risk is highest, and if they coincide. I would also like to look at what routes and types of flights have the most exposure to contrails and what types of strategies can be used to avoid contrails such as small changes to altitude or departure time and the operational trade-offs that come with them. I use different parts of Australia's aviation network as case studies, with a mix of regional and intercity routes which are shaped by Australia's different geography compared to US/Europe.</p>
   </div>
 </details>
 
@@ -59,7 +59,7 @@ noindex: true
 
     <p>As someone who grew up in Australia, I take a lot of interest in how Australia's unique geography plays a major role in its reliance on long-haul and domestic air travel to stay connected to the rest of the world, and how it is relatively unexplored compared to places in the Northern Hemisphere.</p>
 
-    <p><strong>Contrails Australia</strong> is my personal project to examine contrail formation in Australian skies using real atmospheric data by identifying hotspots, understanding the conditions that create them and exploring what avoidance might look like in practice.</p>
+    <p><strong>Contrails Australia</strong> is my personal project to examine contrail risk in Australian skies using real atmospheric data by identifying hotspots, understanding the conditions that create them and exploring what avoidance might look like in practice.</p>
     <ul>
       <li><strong>GitHub:</strong> <a href="https://github.com/sidathchandrasena">sidathchandrasena</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sidath-chandrasena">sidath-chandrasena</a></li>

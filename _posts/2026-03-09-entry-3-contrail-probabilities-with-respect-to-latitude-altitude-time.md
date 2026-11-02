@@ -22,12 +22,14 @@ Plots 1 and 2 are heatmaps which aggregate the data to compare Mean Contrail For
 | 45°S | Deep Southern Ocean — no land, no flights |
 | 43°S | Southern Tasmania (Hobart) |
 | 38°S | Southern Victoria coast — aviation zone boundary (dashed white line) |
-| 35°S | Sydney / Canberra |
+| 35.3°S | Canberra |
+| 33.9°S | Sydney |
 | 32°S | Perth |
 | 27°S | Brisbane |
-| 25°S | Tropic of Capricorn boundary — transition to tropical atmosphere |
-| 23°S | Alice Springs |
-| 17°S | Darwin / north Kimberley |
+| 23.7°S | Alice Springs |
+| 23.4°S | Tropic of Capricorn boundary — transition to tropical atmosphere |
+| 12.5°S | Darwin |
+| 14°S | North Kimberley |
 | 10°S | Northern edge of the data domain, above Cape York |
 
 <br>
@@ -56,13 +58,13 @@ As can be seen above, there are noticeable differences in the bar plots so condi
 I can also further examine the results of this bar plot by splitting it into different latitudes as discussed above:
 ![Diurnal Contrail Signal by Latitude Band](/assets/images/entry_4_diurnal_by_band.png)
 
-Both plots reveal 14 UTC (midnight AEST) to be the peak, with the Southern Ocean band dominating by 3-7x at every UTC hour, and with 02 UTC (Noon AEST) as the trough. 
+Both plots reveal 14 UTC (midnight AEST) to be the peak out of the four six-hourly snapshots, with the Southern Ocean band dominating by 3-7x at every UTC hour, and with 02 UTC (Noon AEST) as the trough. 
 
 <br>
 ### The main takeaway
-From what I have, I observed that contrail formation conditions are the highest overnight and lowest around midday. How does this compare to what is mentioned online?
+From what I have, I observed that contrail forcing index is at its highest overnight and lowest around midday. How does this compare to what is mentioned online?
 
-It was found that the season with the highest amount of contrails is winter in a study taken in the Northern Hemisphere<sup><a href="#ref1">1</a></sup>, which is when this dataset was recorded. Early morning flights tend to create "cooling contrails", while evening and night flights produce contrails with the highest warming contribution.<sup><a href="#ref2">2</a></sup> This demonstrates how contrail formation conditions do not necessarily equate to high amounts of warming.
+It was found in a study from the Northern Hemisphere <sup><a href="#ref1">1</a></sup> that winter flights contributed heavily to contrail warming. My dataset also covers winter, although this may not transfer directly to Australia's winter. Early morning flights tend to create "cooling contrails", while evening and night flights produce contrails with the highest warming contribution.<sup><a href="#ref2">2</a></sup> 
 
 ---
 

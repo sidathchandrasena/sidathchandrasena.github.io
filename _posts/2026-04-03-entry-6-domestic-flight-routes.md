@@ -5,24 +5,24 @@ description: Taking a look at Australia's domestic flight network with governmen
 
 ## Entry 6: Charting Australia's Domestic Skies
 
-Last post, I used a very limited amount of ADS-B data to get a glimpse into how contrail formation in winter intersects with air traffic inside Australia. Despite how limited the ADSB data was, it showed how contrail formation likelihood may not align directly with where the air traffic is, and identified the Bass Strait as a region to be investigated further, where there was a reasonable amount of air traffic and contrail forcing index.
+Last post, I used a very limited amount of ADS-B data to get a glimpse into how winter CFI values intersect with air traffic inside Australia. Despite how limited the ADSB data was, it showed how high CFI values may not align directly with where the air traffic is, and identified the Bass Strait as a region to be investigated further, where there was a reasonable amount of air traffic and contrail forcing index.
 
 OpenSky's free tier ran out of credits quite fast, so I decided to use a Github Action to collect a snapshot of Australian airspace every 15 minutes. It will take a week to collect a good amount of data, so this post is what I am doing while waiting for that.
 
 ----
 
-In Australia, BITRE (Bureau of Infrastructure, Transport and Regional Economics) provides a free, downloadable dataset of monthly domestic aviation statistics with the total number of flights and seats for that month. In today's post, I plan to look at domestic flight routes, particularly the busiest ones, and evaluate them with the contrail risk data. 
+In Australia, BITRE (Bureau of Infrastructure and Transport Research Economics) provides a free, downloadable dataset of monthly domestic aviation statistics with the total number of flights and seats for that month. In today's post, I plan to look at domestic flight routes, particularly the busiest ones, and evaluate them with the contrail risk data. 
 
 Entry 5 found from some limited OpenSky data that flights were observed to mostly be at FL320–FL400 in Australian skies. A quick search online at flight reports shows a cruising altitude from SYD-MEL ranging from FL330 to FL400.
 
 --------
 ### How this analysis was done
 
-**Transparent Sheet:** Used 28km squares over a map of Australia and coloured each square by how often the atmosphere at cruising altitude (FL320-400) contains the conditions for contrails to form and persist. Dark squares indicate where the atmosphere is prone to contrail formation.
+**Transparent Sheet:** Used 28km squares over a map of Australia and coloured each square by how often the CFI at cruising altitude (FL320-400) is above zero. Dark squares indicate where CFI is most often above zero.
 
 **Great Circle Paths:** on a globe, the shortest path between two points is a slight curve known as a "great circle". For short routes that curve is almost identical to a straight line on a flat map, while for longer routes it arcs more noticeably. I go along each great circle and record which grid squares it passes through, treating the whole route as if it were at cruise, which may overstate the exposure at airports where planes would be climbing or descending.
 
-**The BITRE dataset:** Contains monthly domestic aviation statistics with every city pair in Australia. We downloaded all 12 months of 2024 and added them up to get annual flight counts. For each route, multiplied contrail risk along the great circle path by the annual flight count resulting in a total annual exposure score that indicates how contrail-forming the route's geography is with its flying frequency.
+**The BITRE dataset:** Contains monthly domestic aviation statistics with every city pair in Australia. We downloaded all 12 months of 2024 and added them up to get annual flight counts. For each route, multiplied contrail risk along the great circle path by the annual flight count resulting in a total annual exposure score that indicates how much contrail risk the route's geography and flying frequency add up to.
 
 In summary, our dataset looks like this:
 
@@ -64,7 +64,7 @@ To look into this question, 3 scatter plots were generated examining the roles o
 
 ![Factors Driving Contrail Exposure](/assets/images/entry_6_factors.png)
 
-Plot 1 shows a strong correlation between annual flight count and total exposure. This matches what we saw with SYD-MEL flights where when a route is flown more often, total exposure accumulates. However, this relationship is not purely linear, with an example being HBA-MEL which sits above the trend line because the per-flight risk is so much higher than average.
+Plot 1 shows a strong correlation between annual flight count and total exposure. This is expected, given that total exposure is calculated using flight count. HBA-MEL sits above the trend line because the per-flight risk is so much higher than average.
 
 In Plot 2, as mentioned earlier, routes with few seats (<70) tend to be turboprop planes which results in some scattered results because they actually fly at much lower altitudes below the risk window. The highest per-flight scorers all have 100+ seats, which indicates that they are jet-operated routes. Routes like DPO-MEL score high in exposure but have low seat numbers per flight (turboprop) so the high score reflects Bass Strait geography rather than a real contrail exposure.
 
@@ -74,6 +74,6 @@ Plot 3 shows a weak positive trend between route distance and per-flight risk. T
 ## Main Takeaways
 While waiting on ADSB data to load, we were able to get some interesting information using BITRE data along with our Contrails and OpenSky data.
 
-With what we have, we can see examples of how contrail formation risk appears in different ways. In some cases, it is high-risk and low-traffic, and in other cases, it can be low-risk and high-traffic. 
+With what we have, we can see examples of how contrail risk appears in different ways. In some cases, it is high-risk and low-traffic, and in other cases, it can be low-risk and high-traffic. 
 
 The ADS-B data, when loaded, will provide more supporting information. Particularly to answer questions such as whether the actual paths match the great circles, or if every flight on the same route hits the same risk cells? Some other considerations for future posts include looking at turboprop flights at lower altitudes, and looking at how data at other times in the year (seasonality) affects things.

@@ -7,15 +7,15 @@ description: This time, contrail data is matched with ADS-B flight traffic data 
 
 Entries 5 and 6 had limited ADS-B (air traffic) data, resulting in the flight traffic data and contrail data being from different time periods: we had to overlay March 2026 OpenSky flight traffic data on winter 2025 contrail grids. 
 
-In this post, both datasets cover the same eight-day window of **3-11 April 2026**, which will give us a more accurate picture of the relationship between contrail formation likelihood and air traffic in Australian skies.
+In this post, both datasets cover the same eight-day window of **3-11 April 2026**, which will give us a more accurate picture of the relationship between CFI and air traffic in Australian skies.
 
 
 ### Datasets
 #### Dataset A: `contrail_grids`
 
-This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. Every 6 hours, a weather model assesses whether a contrail would form if a plane flew through there with a continuous CFI float value between 0 and 4. My dataset only retains squares with a value greater than 0.001. 
+This is the Google Contrails API data. It splits Australia's airspace into squares about 28 km wide. The CFI float value ranges between 0-4 and is a scale of expected contrail warming by combining how likely a contrail is to form with how much warming it would cause. Due to size constraints, I only captured data at six hour intervals and retained squares with a value greater than 0.001. 
 
-The dataset is in Autumn 2026, and a lot smaller in size compared to previous datasets during the Winter 2025 timeframe. The difference in results could be explained by the different climate conditions across seasons in the Southern Hemisphere, but the two datasets also cover different years and lengths of time, so they aren't exactly comparable.
+The dataset is in Autumn 2026, and a lot smaller in size compared to previous datasets during the Winter 2025 timeframe. This is partly because the April dataset only stored squares with a CFI > 0.001 while the Winter 2025 dataset kept every square. The difference in results could be explained by the different climate conditions across seasons in the Southern Hemisphere, but the two datasets also cover different years and lengths of time, so they aren't exactly comparable.
 
 To summarise Dataset A:
 
@@ -41,7 +41,7 @@ The figure below shows how each bar represents one 6-hourly forecast snapshot.
 
 Dataset B uses ADSB.fi, a free alternative to OpenSky that provides community-driven and crowdsourced air traffic data.
 
-The data was collected using a Github workflow titled `collect-flights.yml`, which runs a script called `collect_flights_adsb.py` every 30 minutes. ADSB.fi then returns a big JSON blob with one aircraft per entry. The script filters to only accept aircraft above FL200 (20,000 ft), making sure they are airborne.
+The data was collected using a Github workflow titled `collect-flights.yml`, which runs a script called `collect_flights_adsb.py` every 30 minutes. ADSB.fi then returns a big JSON blob with one aircraft per entry. The script filters to only accept aircraft above FL200 (20,000 ft), making sure they are airborne. Coverage was uneven, with no polls for 00 UTC, one in 02 UTC and up to 34 in others. 
 
 
 | Attribute | Value |
@@ -86,19 +86,17 @@ The below plot combines 8 days' worth of data into one single 24-hour UTC clock 
 
 ![Diurnal pattern](/assets/images/entry_7_diurnal.png)
 
-The blue line (left axis) shows the average number of aircraft in the sky at each UTC hour. This shows a low at AEST night and a high across the daytime domestic period (peaking around UTC 0:00, which is ~10:00 AEST).
+The blue line (left axis) shows the average number of aircraft in the sky at each UTC hour. This shows a low at AEST night and a high across the daytime domestic period. 
 
-The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. This peaks at 15 UTC (01:00 AEST), so the middle of Australian overnight with a low at 01-02 UTC (11:00-12:00 AEST). This matches what was observed earlier in Entry 3.
-
-The key finding here is that the hours with the most air traffic (UTC 22:00-02:00, morning to midday AEST) are not the most prone to contrail exposure, but rather the quieter overnight window.
+The red dashed line (right axis) shows the average percentage of active fleet inside a contrail risk zone at each UTC hour. Each plane sighting gets matched to the most recent six-hourly forecast time before it. 00:00 has no polls at all, so if we compare 06:00, 12:00 and 18:00 UTC, we can see that fleet contrail exposure is generally higher at 12 UTC (22:00 AEST) and 18 UTC (04:00 AEST) and at its lowest around 06 UTC (16:00 AEST). The number of at-risk sightings is quite small and needs more evidence, but the general trend of a peak in the night matches what was seen earlier in Entry 3. It is interesting to see that the hours with the most air traffic may not have the highest contrail risk, but rather the quieter overnight window.
 
 ----
 
 ## Questions + Takeaways
 **Takeaways:**
-* In addition to the Bass Strait and Tasman Sea, another area of interest identified for contrail formation risk is the interior of WA.
+* In addition to the Bass Strait and Tasman Sea, another area of interest identified for contrail risk is the interior of WA.
 
-* The overnight window is when the highest risk of contrail formation occurs rather than the hours when there is the most air traffic.
+* It might be worth focusing on the overnight window for flights when looking at contrail risk
   
 **Food for thought for the next entry:** 
  
@@ -106,4 +104,4 @@ The key finding here is that the hours with the most air traffic (UTC 22:00-02:0
 
 * What weather data can we use to understand the changes in at-risk aircraft? 
   
-* What causes the WA interior, Bass Strait and Tasman Sea to have a higher risk of contrail formation?
+* What causes the WA interior, Bass Strait and Tasman Sea to have higher CFI values?

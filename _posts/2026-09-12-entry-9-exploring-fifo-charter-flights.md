@@ -10,7 +10,7 @@ Last time, my discoveries into Interior WA, an area I knew little about, reveale
 <br>
 ### What is FIFO work?
 
-Growing up in South Australia, I was familiar with the term FIFO meaning "fly-in, fly-out" and its association with the mining industry with places such as Olympic Dam listed as destinations on small regional flights. In terms of those who work in the FIFO industry, what comes to mind is people who wear hardhats and hi-vis vests, but I imagined all sorts of people connected to the industry including site engineers, tradesmen and executives.
+Growing up in South Australia, I was familiar with the term FIFO meaning "fly-in, fly-out" and its association with the mining industry with places such as Olympic Dam listed as destinations on small regional flights. In terms of those who work in the FIFO industry, what comes to mind is people who wear hardhats and hi-vis vests, but I imagined all sorts of people connected to the industry including site engineers, tradespeople and executives.
 
 <figure>
   <img src="/assets/images/entry_9_fifo_plane.jpg" alt="Alliance Airlines Fokker 100 VH-FKK">
@@ -49,7 +49,7 @@ For the first plot, I wanted to view how FIFO vs non-FIFO flights frequency diff
 
 ![FIFO vs non-FIFO flight frequency by hour of day](/assets/images/entry_9_fifo_hour_of_day.png)
 
-FIFO flights compared to non-FIFO peak around 5am and 5pm Perth local time. Non-FIFO flights represent a higher proportion of all flights before 5am, between 10am-2pm and 6-8pm. This seems to align well with many (paywalled) articles online depicting how extremely early FIFO flights have led to some health concerns over poor sleep quality and risks of car accidents to and from the airport. One example of an article that explores this is Maisey et al<sup><a href="#ref5">5</a></sup>.
+FIFO flights compared to non-FIFO peak around 5am and 5pm Perth local time. Non-FIFO flights represent a higher proportion of all flights before 5am, between 10am-2pm and 6-8pm. This seems to align well with articles describing how extremely early FIFO flights have led to some health concerns over poor sleep quality and risks of car accidents to and from the airport, such as Maisey et al<sup><a href="#ref5">5</a></sup>.
 
 <br>
 #### Plot 2: FIFO vs non-FIFO - Day of the Week

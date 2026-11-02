@@ -5,7 +5,7 @@ description: Looking at a bigger set of matched contrails and ADS-B data to reve
 
 ## Entry 8: Examining Interior WA
 
-Some regions identified in past entries included the Bass Strait and Tasman Sea. These were areas where climate conditions made contrail formation likely, but also where air traffic was high enough. For the Tasman Sea, we can imagine flights between Australia and NZ, and Bass Strait includes flights from the Australian mainland to Tasmania. 
+Some regions identified in past entries included the Bass Strait and Tasman Sea. These were areas where CFI values were high, but also where air traffic was high enough. For the Tasman Sea, we can imagine flights between Australia and NZ, and Bass Strait includes flights from the Australian mainland to Tasmania. 
 
 One region that was also discovered last entry was Interior WA. Today's entry will take a look at this in more detail from a purely data point of view.
 
@@ -26,7 +26,7 @@ exposure["in_risk"] = exposure["contrail_prob"] > 0.001   # > 0.001  →  at-ris
 n_at_risk = exposure["in_risk"].sum()                     # count the True's
 ```
 
-To narrow down the dataset to WA, we created a bounding box around the clustered at-risk observations seen in Entry 7, the coordinates being: `112.5–122.5° / -34.5° to -27.5°`. 
+To narrow down the dataset to WA, we created a bounding box around the clustered at-risk observations seen in Entry 7, the coordinates being: `112.5–122.5° / -34.5° to -27.5°`. This is described as "Interior WA" for short, but also includes Perth, the southwest and some ocean.
 
 Our data can now be summarised as:
 
@@ -52,15 +52,15 @@ What's interesting to observe is that there are lots of days where at-risk obser
 The spike is not caused by increased air traffic, as air traffic remains steady throughout and 22 April was an ordinary day in terms of air traffic. It would be interesting to look into other factors that may have caused this, such as humidity and temperatures that day.
 
 
-#### At What Height Did Airplanes Get Caught in Contrail-Forming Air?
-The altitudes range from around FL330-FL410, which spans around 10,000 ft deep. There is a noticeable peak at around FL370, which is standard narrowbody cruise altitude. This is some food for thought, as it may pose a challenge for any altitude avoidance strategies. 
+#### At What Height Did Airplanes Get Caught in At-Risk Cells?
+At-risk sightings range from altitudes from around FL330-FL410, around 8,000 ft. This is the spread across 24 days and locations, rather than the thickness of one contrail layer. There is a noticeable peak at around FL370, which is standard narrowbody cruise altitude. This is some food for thought, as it may pose a challenge for any altitude avoidance strategies. 
 
-If contrail-forming air can be anywhere across this range of altitudes, avoiding it with altitude-avoidance strategies can also result in an increase in fuel burn. However, researchers at Imperial College London<sup><a href="#ref1">1</a></sup> and the University of Cambridge<sup><a href="#ref2">2</a></sup> found that the warming avoided more than offset this fuel burn.
+If at-risk cells can vary in altitude, avoiding them with altitude-avoidance strategies can also result in an increase in fuel burn. However, researchers at Imperial College London<sup><a href="#ref1">1</a></sup> and the University of Cambridge<sup><a href="#ref2">2</a></sup> found that the warming avoided more than offset this fuel burn.
 
 
 <figure>
   <img src="/assets/images/entry_8_altitude.png" alt="Altitude distribution of at-risk flights over interior WA">
-  <figcaption>How deep the contrail-forming layer is, by altitude</figcaption>
+  <figcaption>Altitudes of at-risk sightings across 24 days</figcaption>
 </figure>
 
 
@@ -77,12 +77,12 @@ Looking at the data more closely, it is not one route responsible for most of th
 | Operator | At-risk obs | What they are |
 |---|---:|---|
 | **Virgin Australia** (VOZ) | 41 | Perth–east-coast trunk (737) |
-| **Network Aviation** (NWK) | **21** | **Qantas-owned FIFO mining charters within WA** |
+| **Network Aviation** (NWK) | **21** | **Qantas-owned FIFO charters and scheduled services within WA** |
 | **Qantas** (QFA) | 18 | Perth–east-coast trunk (737/A330) |
 | Jetstar (JST/JTE) | 14 | Low-cost domestic + Perth–Singapore |
 | Everyone else combined | ~42 | Mostly foreign carriers transiting Perth |
 
-One interesting observation above is "Network Aviation" at second place, which are all of the FIFO (fly in, fly out) operations between Perth and remote WA for mining work.
+One interesting observation above is "Network Aviation" at second place, which is a major FIFO operator between Perth and remote WA, and also flies scheduled services.
 
 Below is also the distribution by aircraft type:
 

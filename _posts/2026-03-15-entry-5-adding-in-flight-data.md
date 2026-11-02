@@ -5,16 +5,16 @@ description: Overlaying real ADS-B flight traffic data on contrail risk maps to 
 
 ## Entry 5: Adding in Flight Data
 
-In previous posts, we looked purely at contrail formation index based on altitude and coordinates. In this post, we're going to add a flight traffic layer to move from "where do contrails form" to "where do contrails form where there is also high air traffic?".
+In previous posts, we looked purely at the CFI value based on altitude and coordinates. In this post, we're going to add a flight traffic layer to move from "where is the CFI high" to "where is both the CFI high and air traffic also high?".
 
 The data needed to find this out is ADS-B data, which provides insights into flight traffic. To get ADS-B data, I created an account on OpenSky. However, a standard account restricts queries to the last hour and I need researcher access to match the May-Jul 2025 window that matches the Contrails data timeframe. For now, assuming that flight routes remain largely stable year-round, I can use existing data to get some insights. Using this, I got four insightful plots.
 
 ### Plot 1: Overlay: Flight Corridors on Contrail Risk Background
 ![Flight Corridors Overlaid on Contrail Risk Map](/assets/images/entry_5_overlay.png)
 
-As seen above, flight density is highest on the east coast connecting the cities Brisbane, Sydney and Melbourne. Interestingly, Darwin has very little air traffic represented, which might be caused by OpenSky receiver gaps in NT. These observations on air traffic contrast with the highest contrail formation probabilities, which are concentrated in the Southern ocean. The only place of overlap is in the Bass Strait (between Melbourne and Tasmania) which has a reasonable amount of traffic but not as significant as between the three cities mentioned above.
+As seen above, flight density is highest on the east coast connecting the cities Brisbane, Sydney and Melbourne. Interestingly, Darwin has very little air traffic represented, which might be caused by OpenSky receiver gaps in NT. These observations on air traffic contrast with the highest CFI values, which are concentrated in the Southern ocean. The only place of overlap is in the Bass Strait (between Melbourne and Tasmania) which has a reasonable amount of traffic but not as significant as between the three cities mentioned above.
 
-The main takeaway from all of this is that Australia's busiest flight paths are not where contrail formation is most likely to happen, at least based on the current dataset collected in winter 2025. Even if we were to predict flight levels to avoid contrail-likely zones, this would not affect the busiest flight corridors in Australia.
+The main takeaway from all of this is that Australia's busiest flight paths are not where CFI values are the highest, at least based on the current dataset collected in winter 2025. Even if we were to predict flight levels to avoid high warming contrail zones, this might have limited effect on the busiest flight corridors in Australia, although Plot 2 below shows some overlap.
 
 
 ### Plot 2: Exposure Index: Where Avoidance Would Matter Most
@@ -23,7 +23,7 @@ This plot provides an indicator of prioritisation for avoidance effort. Each gri
 
 ![Contrail Exposure Index Map](/assets/images/entry_5_exposure.png)
 
-This presents some interesting results where the two (contrail formation and flight density) might overlap. The peak cell was found at 36.25°S, 148.00°E with an exposure score of 0.123, which is Snowy Mountains / Monaro Tablelands and is a part of the Sydney-Melbourne route, which is the 6th most travelled route worldwide<sup><a href="#ref1">1</a></sup>!
+This presents some interesting results where the two (CFI and flight density) might overlap. The peak cell was found at 36.25°S, 148.00°E with an exposure score of 0.123, which is Snowy Mountains / Monaro Tablelands and is a part of the Sydney-Melbourne route, which is the 6th most travelled route worldwide<sup><a href="#ref1">1</a></sup>!
 
 Another cell of interest is 41.00°S, 146.50°E which is over the Bass Strait (flights to and from Tasmania). Its atmospheric risk is around ~3× higher than the NSW tablelands cells but fewer aircraft transit it. Northern Territory is completely blank here. Anecdotally many aircraft pass the NT on overseas flights - perhaps it is a lapse in ADS-B data.
 
